@@ -1,80 +1,66 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Link from "next/link";
-import lightTheme from "../../styles/themes/theme";
-import { pages, siteName, heroContent } from "../../siteInfo";
-import NativeImage from "../general/NativeImage.js";
 
 const Hero = () => {
     return (
-        <Box className="section" sx={{ marginTop: { xs: "none", md: "4rem" } }}>
+        <Box
+            className="section border-bottom"
+            sx={{
+                backgroundImage: {
+                    xs: `linear-gradient(to right, rgba(255, 252, 235, .5), rgba(255, 252, 235, 0.75), rgba(255, 252, 235, 1)), url(/images/rose2.webp)`,
+                    md: `linear-gradient(to right, rgba(255, 252, 235, 0), rgba(255, 252, 235, 0.5), rgba(255, 252, 235, 1)), url(/images/rose2.webp)`,
+                },
+                backgroundSize: "cover",
+                backgroundPosition: { xs: "50% 0%", md: "0% 0%" },
+            }}
+        >
             <Container maxWidth="xl">
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} sm={6}></Grid>
+                    <Grid item xs={12} sm={6}>
                         <Box
                             sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                height: "100%",
-                                padding: "6rem 0",
+                                padding: {
+                                    xs: "15vh 0 22vh 0",
+                                    md: "20vh 0 20vh 0",
+                                },
                             }}
                         >
-                            <Box
+                            <Typography
+                                variant="h1"
                                 sx={{
-                                    height: "100%",
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    gap: "1em",
-                                    justifyContent: "center",
+                                    textAlign: "end",
+                                    marginBottom: ".5em",
                                 }}
                             >
-                                <Typography variant="h1">
-                                    {heroContent.title}
-                                </Typography>
-                                <Box>
-                                    {heroContent.highlights.map(
-                                        (highlight, index) => {
-                                            return (
-                                                <Typography
-                                                    key={index}
-                                                    sx={{
-                                                        marginBottom: ".5em",
-                                                    }}
-                                                >
-                                                    {highlight}
-                                                </Typography>
-                                            );
-                                        }
-                                    )}
-                                </Box>
-                                <Box sx={{ display: "flex", gap: "1em" }}>
-                                    {heroContent.buttons.map(
-                                        (button, index) => {
-                                            return (
-                                                <Link
-                                                    key={index}
-                                                    href={button.href}
-                                                >
-                                                    <Button
-                                                        variant={button.variant}
-                                                        size="large"
-                                                    >
-                                                        {button.text}
-                                                    </Button>
-                                                </Link>
-                                            );
-                                        }
-                                    )}
-                                </Box>
+                                FICTIONAL{" "}
+                                <span className="color-accent">WEB.</span>
+                            </Typography>
+                            <Typography
+                                variant="h4"
+                                sx={{
+                                    marginBottom: ".5em",
+                                    textAlign: "end",
+                                }}
+                            >
+                                We are a web development agency that focuses on
+                                creating websites that capture and further the
+                                image, personality, mission, and voice of our
+                                clients.
+                            </Typography>
+                            <Box
+                                sx={{ display: "flex", justifyContent: "end" }}
+                            >
+                                <Link href="/projects">
+                                    <Button
+                                        variant="outlined"
+                                        color="secondary"
+                                    >
+                                        view our work
+                                    </Button>
+                                </Link>
                             </Box>
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <Box>
-                            <NativeImage
-                                maxSize={2000}
-                                image={heroContent.image}
-                            />
                         </Box>
                     </Grid>
                 </Grid>

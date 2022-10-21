@@ -14,17 +14,18 @@ import lightTheme from "./styles/themes/theme";
 
 // 1. Meta
 
-const siteName = "SICKTOOTH";
+const siteName = "FICTIONAL WEB";
 // const siteName = "Cosima Hewes";
 
 // 2. Layout
 
 const navbar = {
     buttonOne: {
-        text: "Subscribe",
-        href: "/subscribe",
-        variant: "outlined",
+        text: "Get Started",
+        href: "/contact",
+        variant: "contained",
     },
+    image: { url: "/images/logo.png", alt: "nautilus shell design" },
 };
 
 const header = {
@@ -52,24 +53,6 @@ const heroContent = {
             href: "/publications",
             text: "View publications",
         },
-    ],
-};
-
-const homeGalleryContent = {
-    images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
     ],
 };
 
@@ -274,106 +257,6 @@ const showcaseContentOne = {
 // 4. Services
 // 5. Projects
 
-const galleryStylesCategories = [
-    {
-        name: "Black and White",
-        href: "/gallery/styles/black%20and%20white",
-        image: {
-            url: "/images/placeholder.webp",
-            alt: "alt gallery image text",
-        },
-    },
-    {
-        name: "Mixed Media",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
-    },
-    {
-        name: "Acrylic",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
-    },
-    {
-        name: "Watercolor",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
-    },
-];
-
-const galleryCategories = [
-    {
-        name: "fiction",
-        href: "/publications/fiction",
-        image: {
-            url: "/images/placeholder.webp",
-            alt: "alt gallery image text",
-        },
-        subCategories: [
-            {
-                name: "short story",
-                href: "/publications/fiction/shortstories",
-                image: {
-                    url: "/images/placeholder.webp",
-                    alt: "alt gallery image text",
-                },
-            },
-            {
-                name: "flash fiction",
-                href: "/publications/fiction/flash",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-            {
-                name: "novella",
-                href: "/publications/fiction/novellas",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-        ],
-    },
-    {
-        name: "poetry",
-        href: "/publications/poetry",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
-        subCategories: [],
-    },
-    {
-        name: "article",
-        href: "/publications/articles",
-        image: { url: "/images/placeholder.webp", alt: "alt text" },
-        subCategories: [
-            {
-                name: "editorial",
-                href: "/publications/articles/editorials",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-            {
-                name: "letter",
-                href: "/publications/articles/letters",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-            {
-                name: "opinion",
-                href: "/publications/articles/letters",
-                image: { url: "/images/placeholder.webp", alt: "alt text" },
-            },
-        ],
-    },
-];
-
-const galleryConfig = {
-    categories: [],
-    subCategories: [],
-    fields: [
-        { name: "Title", type: "text", value: "" },
-        { name: "Author", type: "text", value: "" },
-        {
-            name: "Hook",
-            type: "text",
-            value: "",
-            multiline: true,
-            rows: 4,
-        },
-        { name: "Published", type: "number", value: "" },
-        { name: "Artist", type: "text", value: "" },
-    ],
-};
-
 const subscribeConfig = {
     website: "SICKTOOTH",
     category: "contact",
@@ -517,204 +400,48 @@ const processSteps = [
     },
 ];
 
-const eventConfig = {
-    categories: [],
-    subCategories: [],
-    fields: [
-        { name: "Title", type: "text", value: "" },
-        { name: "Start Date", type: "date", value: "" },
-        { name: "End Date", type: "date", value: "" },
-        { name: "Venue", type: "text", value: "" },
-        { name: "Time", type: "text", value: "" },
-        {
-            name: "Description",
-            type: "text",
-            value: "",
-            multiline: true,
-            rows: 4,
-        },
-        { name: "Venue Website", type: "text", value: "" },
-    ],
-    timeUploaded: new Date(),
-};
-const contributorConfig = {
-    categories: [],
-    subCategories: [],
-    fields: [
-        { name: "Name", type: "text", value: "" },
-        {
-            name: "Description",
-            type: "text",
-            value: "",
-            multiline: true,
-            rows: 4,
-        },
-    ],
-    timeUploaded: new Date(),
-};
-
-const textSubmissionsConfig = {
-    fields: [
-        { name: "Name", type: "text", value: "" },
-        { name: "Genre", type: "text", value: "" },
-        { name: "Previously Published", type: "text", value: "" },
-        {
-            name: "Comment",
-            type: "text",
-            value: "",
-            multiline: true,
-            rows: 4,
-        },
-    ],
-    timeUploaded: new Date(),
-};
-const imageSubmissionsConfig = {
-    fields: [
-        { name: "Name", type: "text", value: "" },
-        { name: "Genre", type: "text", value: "" },
-        { name: "Previously Published", type: "text", value: "" },
-        {
-            name: "Comment",
-            type: "text",
-            value: "",
-            multiline: true,
-            rows: 4,
-        },
-    ],
-    timeUploaded: new Date(),
-};
-
 const pages = [
-    // {
-    //     name: "issues",
-    //     href: "/issues",
-    //     subPages: [
-    //         { name: "Latest", href: "/issues/latest" },
-    //         { name: "Archive", href: "/issues/archive" },
-    //     ],
-    // },
     {
-        name: "fiction",
-        href: "/publications/fiction",
+        name: "services",
+        href: "/services",
         subPages: [],
     },
     {
-        name: "poetry",
-        href: "/publications/poetry",
+        name: "templates",
+        href: "/templates",
         subPages: [],
     },
     {
-        name: "articles",
-        href: "/publications/articles",
-        subPages: [],
-    },
-    {
-        name: "contributors",
-        href: "/contributors",
+        name: "projects",
+        href: "/projects",
         subPages: [],
     },
     {
         name: "about",
         href: "/about",
-        subPages: [
-            { name: "Masthead", href: "/about/masthead" },
-            {
-                name: "Mission Statement",
-                href: "/about/missionstatement",
-            },
-        ],
+        subPages: [],
     },
-    { name: "submissions", href: "/submissions", subPages: [] },
+    // {
+    //     name: "about",
+    //     href: "/about",
+    //     subPages: [
+    //         { name: "Masthead", href: "/about/masthead" },
+    //         {
+    //             name: "Mission Statement",
+    //             href: "/about/missionstatement",
+    //         },
+    //     ],
+    // },
 ];
-
-const videos = [
-    {
-        title: "Video One",
-        description: "Video Description",
-        date: "January 1, 1969",
-        href: "https://www.youtube.com/embed/CzNjdaXleEM",
-    },
-];
-
-const books = [
-    {
-        title: "Book One",
-        publisher: "Name of publisher",
-        date: "2003",
-        description:
-            "This is the description of the book. It contains many interesting facts and entertaining anecdotes. The book I mean, not this description.",
-        button: {
-            href: "https://google.com",
-            variant: "contained",
-            color: "secondary",
-            text: "view listing",
-        },
-
-        image: { url: "/images/hundred.webp", alt: "alt placeholder text" },
-    },
-    {
-        title: "Book Two",
-        publisher: "Name of publisher",
-        date: "2003",
-        description:
-            "This is the description of the book. It contains many interesting facts and entertaining anecdotes. The book I mean, not this description.",
-        button: {
-            href: "https://google.com",
-            variant: "contained",
-            color: "secondary",
-            text: "view listing",
-        },
-        image: { url: "/images/israel.webp", alt: "alt placeholder text" },
-    },
-    {
-        title: "Book Three",
-        publisher: "Name of publisher",
-        date: "2003",
-        description:
-            "This is the description of the book. It contains many interesting facts and entertaining anecdotes. The book I mean, not this description.",
-        button: {
-            href: "https://google.com",
-            variant: "contained",
-            color: "secondary",
-            text: "view listing",
-        },
-        image: { url: "/images/strange.webp", alt: "alt placeholder text" },
-    },
-];
-
-const articles = [
-    { title: "Article one", href: "https://google.com", date: "Jan 1, 2022" },
-    { title: "Article two", href: "https://google.com", date: "Jan 1, 2022" },
-    { title: "Article three", href: "https://google.com", date: "Jan 1, 2022" },
-    { title: "Article four", href: "https://google.com", date: "Jan 1, 2022" },
-    { title: "Article five", href: "https://google.com", date: "Jan 1, 2022" },
-];
-
-const publicationsContent = {
-    title: "Books and Articles by Your Name",
-    body: "This is the body of the page. It can be as long or as short as you like",
-    image: { url: "/images/strange.webp", alt: "alt placeholder text" },
-};
 
 export {
     siteName,
     pages,
     navbar,
     header,
-    videos,
-    books,
-    articles,
-    galleryCategories,
-    galleryStylesCategories,
-    galleryConfig,
-    eventConfig,
     subscribeConfig,
-    contributorConfig,
-    textSubmissionsConfig,
-    imageSubmissionsConfig,
     contactConfig,
     heroContent,
-    homeGalleryContent,
     blockTextOne,
     blockTextTwo,
     blockTextThree,
@@ -731,5 +458,4 @@ export {
     studioContent,
     workContent,
     processSteps,
-    publicationsContent,
 };
