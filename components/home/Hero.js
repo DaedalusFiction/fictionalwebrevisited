@@ -1,3 +1,4 @@
+import { ArrowRightAlt } from "@mui/icons-material";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Link from "next/link";
@@ -31,7 +32,7 @@ const Hero = () => {
                                 variant="h1"
                                 sx={{
                                     textAlign: "end",
-                                    marginBottom: ".5em",
+                                    marginBottom: ".25em",
                                 }}
                             >
                                 FICTIONAL{" "}
@@ -50,10 +51,15 @@ const Hero = () => {
                                 clients.
                             </Typography>
                             <Box
-                                sx={{ display: "flex", justifyContent: "end" }}
+                                sx={{
+                                    display: "flex",
+                                    justifyContent: "end",
+                                    marginTop: "2rem",
+                                }}
                             >
                                 <Link href="/projects">
                                     <Button
+                                        endIcon={<ArrowRightAlt />}
                                         variant="outlined"
                                         color="secondary"
                                     >

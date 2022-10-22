@@ -26,7 +26,7 @@ let theme = createTheme({
         custom: {
             dark: "#484041",
             darkMuted: "#757575",
-            light: "#F6F8FF",
+            light: "#fffceb",
             lightMuted: "#cacaca",
             accent: "red",
         },
@@ -47,8 +47,10 @@ theme = createTheme(theme, {
     border: `1px solid ${theme.palette.custom.accent}`,
     custom: {
         spacing: {
-            paragraph: "2rem",
-            quote: "3rem",
+            small: "2rem",
+            medium: "3rem",
+            large: "4rem",
+            xl: "8rem",
         },
     },
     typography: {
@@ -112,15 +114,15 @@ theme = createTheme(theme, {
         },
         body1: {
             fontFamily: theme.font.primary,
-            fontWeight: "400",
+            // fontWeight: "400",
             fontSize: "1.25rem",
-            lineHeight: "1.25rem",
-            color: theme.palette.custom.darkMuted,
+            // lineHeight: "1.25rem",
+            // color: theme.palette.custom.darkMuted,
             // fontFamily: darkTheme.typography.darkTheme.main,
         },
         body2: {
             fontFamily: theme.font.primary,
-            fontWeight: "400",
+            // fontWeight: "400",
             fontSize: "1.25rem",
             lineHeight: "1.5rem",
             color: theme.palette.custom.darkMuted,
@@ -143,7 +145,8 @@ theme = createTheme(theme, {
         MuiChip: {
             styleOverrides: {
                 root: {
-                    backgroundColor: theme.palette.custom.dark,
+                    backgroundColor: theme.palette.secondary.main,
+                    color: "white",
                 },
             },
         },

@@ -10,12 +10,11 @@ const PageLayout = ({ name, children }) => {
             {/* <Header /> */}
             <Box sx={{ padding: "8rem 0" }}>
                 <Meta siteName={name} />
-                <Container maxWidth="xl">
-                    <Typography variant="h1" sx={{ textAlign: "center" }}>
-                        {name}
-                    </Typography>
-                    {children}
-                </Container>
+
+                <Typography variant="h1" sx={{ textAlign: "center" }}>
+                    {name}
+                </Typography>
+                {children}
             </Box>
         </>
     );

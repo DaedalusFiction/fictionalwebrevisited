@@ -1,13 +1,12 @@
 import { Box, Grid, Typography } from "@mui/material";
-import { leadProfile, secondaryProfiles } from "../../siteInfo";
 import PageLayout from "../../components/layout/PageLayout";
-import Services from "../../components/home/Services";
-
+import ServicesShowcase from "../../components/services/ServicesShowcase";
+import { servicesContent } from "../../siteInfo";
 const index = () => {
     return (
         <PageLayout name="OUR SERVICES">
             <Box className="section">
-                <Services />
+                <ServicesShowcase services={servicesContent} />
             </Box>
         </PageLayout>
     );
