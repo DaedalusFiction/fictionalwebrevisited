@@ -226,6 +226,39 @@ const templatesContent = [
         description:
             "Perfect for groups, solo acts, students, songwriters, or anyone ready to melt faces.",
     },
+    {
+        name: "Musician",
+        image: {
+            url: "/images/cosimaScreencap.webp",
+            alt: "nautilus shell design",
+        },
+        href: "https://google.com",
+        price: "$499",
+        features: [
+            {
+                name: "Photo Gallery",
+                description:
+                    "Upload high-quality images that venues and press can use to promote your music",
+            },
+            {
+                name: "Events Page",
+                description:
+                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+            },
+            {
+                name: "Events Page",
+                description:
+                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+            },
+        ],
+        button: {
+            href: "/contact",
+            text: "Get started with custom",
+            variant: "outlined",
+        },
+        description:
+            "Perfect for groups, solo acts, students, songwriters, or anyone ready to melt faces.",
+    },
 ];
 
 const contactConfig = {

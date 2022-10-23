@@ -8,7 +8,7 @@ const PageLayout = ({ name, children }) => {
     return (
         <>
             {/* <Header /> */}
-            <Box sx={{ padding: "8rem 0 0 0" }}>
+            <Box sx={{ paddingTop: "8rem" }}>
                 <Meta siteName={name} />
 
                 <Typography variant="h1" sx={{ textAlign: "center" }}>

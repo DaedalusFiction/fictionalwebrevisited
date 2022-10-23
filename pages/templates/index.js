@@ -95,7 +95,7 @@ const index = () => {
                                 backgroundColor: theme.palette.primary.main,
                                 display: "flex",
                                 justifyContent: "end",
-                                borderRight: theme.border,
+                                borderRight: { xs: "none", md: theme.border },
                                 height: "100%",
                             }}
                         >
@@ -113,11 +113,18 @@ const index = () => {
                     <Grid item xs={12} md={6}>
                         <Box
                             sx={{
-                                padding: theme.custom.spacing.large,
-                                maxWidth: "30rem",
+                                padding: theme.custom.spacing.medium,
+
+                                backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose5.webp)`,
+                                // backgroundSize: "cover",
+                                backgroundPosition: {
+                                    xs: "50% 0%",
+                                    md: "25% 30%",
+                                },
+                                height: "100%",
                             }}
                         >
-                            <Typography>
+                            <Typography sx={{ maxWidth: "45ch" }}>
                                 Try our hybrid plan instead. Leverage all the
                                 utility of a template, but fine tune it to your
                                 liking.
