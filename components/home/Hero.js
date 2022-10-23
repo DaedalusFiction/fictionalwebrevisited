@@ -2,6 +2,7 @@ import { ArrowRightAlt } from "@mui/icons-material";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Link from "next/link";
+import theme from "../../styles/themes/theme";
 
 const Hero = () => {
     return (
@@ -18,14 +19,17 @@ const Hero = () => {
         >
             <Container maxWidth="xl">
                 <Grid container spacing={2}>
-                    <Grid item xs={12} sm={6}></Grid>
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={5}></Grid>
+                    <Grid item xs={12} sm={7}>
                         <Box
                             sx={{
                                 padding: {
                                     xs: "15vh 0 22vh 0",
                                     md: "20vh 0 20vh 0",
                                 },
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "end",
                             }}
                         >
                             <Typography
@@ -43,18 +47,17 @@ const Hero = () => {
                                 sx={{
                                     marginBottom: ".5em",
                                     textAlign: "end",
+                                    maxWidth: "35rem",
+                                    // color: theme.palette.custom.darkMuted,
                                 }}
                             >
-                                We are a web development agency that focuses on
-                                creating websites that capture and further the
-                                image, personality, mission, and voice of our
-                                clients.
+                                We create websites that tell stories.
                             </Typography>
                             <Box
                                 sx={{
                                     display: "flex",
                                     justifyContent: "end",
-                                    marginTop: "2rem",
+                                    marginTop: "1rem",
                                 }}
                             >
                                 <Link href="/projects">

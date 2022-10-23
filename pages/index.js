@@ -107,7 +107,13 @@ export default function Home() {
                             background: theme.palette.primary.main,
                         }}
                     >
-                        <Box>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "end",
+                            }}
+                        >
                             <Typography
                                 variant="h3"
                                 sx={{
@@ -115,7 +121,7 @@ export default function Home() {
                                     textAlign: "end",
                                 }}
                             >
-                                Copyediting Included
+                                Copyediting comes standard.
                             </Typography>
                             <br />
                             <Typography
@@ -149,7 +155,7 @@ export default function Home() {
                     <Box
                         sx={{
                             padding: theme.custom.spacing.small,
-                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .75), rgba(255, 252, 235, 0.75)), url(/images/rose4.webp)`,
+                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose4.webp)`,
                             // backgroundSize: "cover",
                             backgroundPosition: { xs: "50% 0%", md: "15% 10%" },
                         }}
@@ -157,10 +163,10 @@ export default function Home() {
                         <Typography
                             variant="h1"
                             component="h6"
-                            sx={{ maxWidth: "30rem" }}
+                            sx={{ maxWidth: "40rem" }}
                         >
                             You won&apos;t know what your story is about until
-                            it&apos;s finished
+                            it&apos;s finished.
                         </Typography>
                     </Box>
                 </Grid>

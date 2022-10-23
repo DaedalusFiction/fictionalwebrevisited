@@ -1,13 +1,4 @@
-import {
-    Box,
-    Button,
-    Chip,
-    Container,
-    Fade,
-    Grid,
-    Typography,
-    Zoom,
-} from "@mui/material";
+import { Box, Button, Chip, Fade, Grid, Typography } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 import { navigateToTop } from "../../utility/navigateToTop";
@@ -41,14 +32,14 @@ const Portfolio = () => {
                             flexDirection: "column",
                             justifyContent: "space-between",
                             height: "100%",
-                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .75), rgba(255, 252, 235, 0.75)), url(/images/rose3.webp)`,
+                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose3.webp)`,
                             // backgroundSize: "cover",
                             backgroundPosition: { xs: "50% 0%", md: "55% 90%" },
                         }}
                     >
                         <Box>
                             <Typography variant="h3">
-                                Start to Finish.
+                                All writing is rewriting.
                             </Typography>
                             <br />
                             <Typography>

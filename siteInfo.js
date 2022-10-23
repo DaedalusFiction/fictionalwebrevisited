@@ -1,21 +1,29 @@
-// Table of Contents:
-// 1. Meta
-// 2. Layout
-// 3. Home
-// 4. Services
-// 5. Projects
-// 6. Studio
-// 7. About
-// 8. Social Media
-// 9. The Process
-// 10. Contact
-
-import lightTheme from "./styles/themes/theme";
-
 // 1. Meta
 
 const siteName = "FICTIONAL WEB";
-// const siteName = "Cosima Hewes";
+
+const pages = [
+    {
+        name: "services",
+        href: "/services",
+        subPages: [],
+    },
+    {
+        name: "templates",
+        href: "/templates",
+        subPages: [],
+    },
+    {
+        name: "projects",
+        href: "/projects",
+        subPages: [],
+    },
+    {
+        name: "about",
+        href: "/about",
+        subPages: [],
+    },
+];
 
 // 2. Layout
 
@@ -28,33 +36,7 @@ const navbar = {
     image: { url: "/images/logo.png", alt: "nautilus shell design" },
 };
 
-const header = {
-    buttonOne: {
-        text: "Contact",
-        href: "/contact",
-        variant: "outlined",
-    },
-};
-// 3. Home
-
-const heroContent = {
-    image: { url: "/images/hero.webp", alt: "alt hero text" },
-    title: "YOUR NAME",
-    highlights: [
-        "This is the first highlight.",
-        "This is the second highlight",
-        "This is the third highlight",
-        "This is the fourth highlight",
-    ],
-    buttons: [
-        { variant: "contained", href: "/curriculumvitae", text: "View cv" },
-        {
-            variant: "contained",
-            href: "/publications",
-            text: "View publications",
-        },
-    ],
-};
+// 3. Services
 
 const servicesContent = [
     {
@@ -181,127 +163,71 @@ const servicesContent = [
     },
 ];
 
-const blockTextOne = {
-    backgroundColor: "white",
-    title: "BLOCK TEXT ONE",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, expedita veniam. Magni explicabo dignissimo!",
-};
-const blockTextTwo = {
-    backgroundColor: "white",
-    title: "BLOCK TEXT TWO",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, expedita veniam. Magni explicabo dignissimo!",
-};
-const blockTextThree = {
-    backgroundColor: lightTheme.palette.background.accentLight,
-    title: "BLOCK TEXT THREE",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, expedita veniam. Magni explicabo dignissimo!",
-};
+const templatesContent = [
+    {
+        name: "Musician",
+        image: {
+            url: "/images/academicScreencap.webp",
+            alt: "nautilus shell design",
+        },
+        href: "https://google.com",
+        price: "$499",
+        features: [
+            {
+                name: "Photo Gallery",
+                description:
+                    "Upload high-quality images that venues and press can use to promote your music",
+            },
+            {
+                name: "Events Page",
+                description:
+                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+            },
+        ],
+        button: {
+            href: "/contact",
+            text: "Get started with custom",
+            variant: "outlined",
+        },
 
-const mosaicSectionContentOne = {
-    backgroundColor: lightTheme.palette.background.accentLight,
-    title: "Mosaic Section One",
-    content:
-        "This is the mosaic section content. Here you can describe whatever you like about your service and the button below can link to any page in this website or any external site.",
-    button: {
-        text: "learn more",
-        href: "/about",
-        variant: "contained",
+        description:
+            "Perfect for groups, solo acts, students, songwriters, or anyone ready to melt faces.",
     },
-    images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    ],
-};
-const mosaicSectionContentTwo = {
-    backgroundColor: "white",
-    title: "Mosaic Section Two",
-    content:
-        "This is the mosaic section content. Here you can describe whatever you like about your service and the button below can link to any page in this website or any external site.",
-    button: {
-        text: "learn more",
-        href: "/about",
-        variant: "contained",
+    {
+        name: "Musician",
+        image: {
+            url: "/images/cosimaScreencap.webp",
+            alt: "nautilus shell design",
+        },
+        href: "https://google.com",
+        price: "$499",
+        features: [
+            {
+                name: "Photo Gallery",
+                description:
+                    "Upload high-quality images that venues and press can use to promote your music",
+            },
+            {
+                name: "Events Page",
+                description:
+                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+            },
+            {
+                name: "Events Page",
+                description:
+                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+            },
+        ],
+        button: {
+            href: "/contact",
+            text: "Get started with custom",
+            variant: "outlined",
+        },
+        description:
+            "Perfect for groups, solo acts, students, songwriters, or anyone ready to melt faces.",
     },
-    images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    ],
-};
-const mosaicSectionContentThree = {
-    backgroundColor: "white",
-    title: "Mosaic Section Three",
-    content:
-        "This is the mosaic section content. Here you can describe whatever you like about your service and the button below can link to any page in this website or any external site.",
-    button: {
-        text: "learn more",
-        href: "/about",
-        variant: "contained",
-    },
-    images: [
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    ],
-};
+];
 
-const blockPhotoContentOne = {
-    background: lightTheme.palette.background.accentLight,
-    title: "BLOCK PHOTO TITLE",
-    content: "Block Photo One",
-    button: {
-        text: "Button Text",
-        href: "/about",
-        variant: "contained",
-    },
-    image: {
-        url: "/images/novelists.webp",
-        alt: "Michael hoberman speaking with two novelists",
-    },
-};
-const blockPhotoContentTwo = {
-    background: lightTheme.palette.background.accentLight,
-    title: "BLOCK PHOTO TITLE",
-    content: "Block Photo Two",
-    button: {
-        text: "Button Text",
-        href: "/about",
-        variant: "contained",
-    },
-    image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-};
-
-const showcaseContentOne = {
-    title: "Cool Book Title",
-    subTitle: "Coming Soon",
-    image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    quote: "Uncle Michael is so cool, he won a game of connect four in three moves",
-    description:
-        "This is the showcase description. This is where you can talk about what you're showcasing and tell people why they should be interested.",
-    buttons: [
-        { variant: "contained", href: "https://google.com", text: "Preorder" },
-        { variant: "contained", href: "/work", text: "View publications" },
-    ],
-};
-
-// 4. Services
-// 5. Projects
-
-const subscribeConfig = {
-    website: "SICKTOOTH",
-    category: "contact",
-    fields: [{ name: "Email", type: "text", value: "" }],
-};
 const contactConfig = {
     website: "SICKTOOTH",
     category: "contact",
@@ -313,8 +239,6 @@ const contactConfig = {
 };
 
 // 7. About
-
-// 7a. About
 
 const aboutContent = {
     image: {
@@ -369,76 +293,7 @@ const secondaryProfiles = [
     },
 ];
 
-// 7b. Studio
-
-const studioContent = {
-    imageOne: {
-        url: "/images/missionStatement.webp",
-        alt: "Venus Adorned by the Graces, by Annibale Carracci",
-    },
-    imageTwo: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    imageThree: {
-        url: "/images/placeholder.webp",
-        alt: "alt placeholder text",
-    },
-    header: "This is what we believe",
-    content:
-        "Literature can be a lot of things, but in terms of what it should be, we believe that there is only one: entertaining. Your time is valuable, and there is an incredible amount of literature out there, so to create something entertaining is in that sense a sign of courtesy and respect. We respect you, reader, and we are grateful for your decision to read SICKTOOTH, and to honor that we will do our best to keep you interested. \n\nLiterature as art, though, has a few additional responsibilities. These of course will change, and should change, but as far as SICKTOOTH is concerned, we aim to publish poetry, fiction, creative non-fiction, and art that connects people to one another as well as furthers people's knowledge of themselves. After all, what is a story but a chance to walk in someone else's shoes, and what is a poem but a fresh perspective on the familiar? \n\nAnd beyond all this, we want to support artists and writers. The future of SICKTOOTH depends on them, as does that of the human race.",
-};
-
-// 7c. Work
-
-const workContent = {
-    imageOne: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    imageTwo: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-    imageThree: {
-        url: "/images/placeholder.webp",
-        alt: "alt placeholder text",
-    },
-    header: "Work Header",
-    content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.",
-};
-
-// 8. Social Media
-
-// 9. Process
-// 10. Contact
-
-const processSteps = [
-    {
-        title: "Step Title",
-        name: "STEP ONE",
-        content:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        reverse: false,
-    },
-    {
-        title: "Step Title",
-        name: "STEP TWO",
-        content:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        reverse: true,
-    },
-    {
-        title: "Step Title",
-        name: "STEP THREE",
-        content:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.\n\nLaboriosam voluptatem laudantium sequi iste nihil cupiditate sed, corporis eum natus excepturi, inventore nulla unde! Veritatis nihil culpa neque. Dolore ipsa sed asperiores voluptatibus nam modi. Dolorem hic incidunt quae tenetur quaerat animi, unde aspernatur.\n\nDolore ipsa sed asperiores voluptatibus nam modi.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        reverse: false,
-    },
-    {
-        title: "Step Title",
-        name: "STEP FOUR",
-        content:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eaque nihil ipsum molestias ab quod aliquid consectetur rerum facilis ratione dignissimos fugiat, enim doloribus assumenda.",
-        image: { url: "/images/placeholder.webp", alt: "alt placeholder text" },
-        reverse: true,
-    },
-];
+// 8. Projects
 
 const projectsContent = [
     {
@@ -490,52 +345,15 @@ const projectsContent = [
     },
 ];
 
-const pages = [
-    {
-        name: "services",
-        href: "/services",
-        subPages: [],
-    },
-    {
-        name: "templates",
-        href: "/templates",
-        subPages: [],
-    },
-    {
-        name: "projects",
-        href: "/projects",
-        subPages: [],
-    },
-    {
-        name: "about",
-        href: "/about",
-        subPages: [],
-    },
-];
-
 export {
     siteName,
     pages,
     navbar,
-    header,
-    subscribeConfig,
     contactConfig,
-    heroContent,
     projectsContent,
-    blockTextOne,
-    blockTextTwo,
-    blockTextThree,
-    blockPhotoContentOne,
-    blockPhotoContentTwo,
-    showcaseContentOne,
-    mosaicSectionContentOne,
-    mosaicSectionContentTwo,
-    mosaicSectionContentThree,
     servicesContent,
+    templatesContent,
     aboutContent,
     leadProfile,
     secondaryProfiles,
-    studioContent,
-    workContent,
-    processSteps,
 };

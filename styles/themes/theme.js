@@ -38,7 +38,7 @@ let theme = createTheme({
         },
     },
     font: {
-        primary: "Playfair Display",
+        primary: "Inconsolata",
         accent: "Yeseva One",
     },
 });
@@ -61,7 +61,7 @@ theme = createTheme(theme, {
             // color: theme.palette.primary.off,
             fontWeight: "600",
             lineHeight: "1em",
-            fontSize: "clamp(3.5rem, 5vw, 7rem)",
+            fontSize: "clamp(3.5rem, 6vw, 7rem)",
             letterSpacing: ".025em",
         },
         h2: {
@@ -96,8 +96,8 @@ theme = createTheme(theme, {
             // color: darkTheme.palette.custom.dark,
         },
         h6: {
-            fontWeight: "500",
-            fontSize: "1rem",
+            fontWeight: "650",
+            fontSize: "1.25rem",
         },
 
         subtitle1: {
@@ -114,9 +114,9 @@ theme = createTheme(theme, {
         },
         body1: {
             fontFamily: theme.font.primary,
-            // fontWeight: "400",
-            fontSize: "1.25rem",
-            // lineHeight: "1.25rem",
+            fontWeight: "475",
+            fontSize: "1.35rem",
+            lineHeight: "1.75rem",
             // color: theme.palette.custom.darkMuted,
             // fontFamily: darkTheme.typography.darkTheme.main,
         },
@@ -129,7 +129,8 @@ theme = createTheme(theme, {
             // fontFamily: darkTheme.typography.darkTheme.decorative,
         },
         caption: {
-            color: theme.palette.custom.darkMuted,
+            color: theme.palette.custom.dark,
+            fontSize: ".95rem",
         },
     },
     components: {

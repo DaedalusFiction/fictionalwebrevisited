@@ -29,6 +29,16 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                     paddingTop: theme.custom.spacing.xl,
                                     paddingBottom: theme.custom.spacing.xl,
 
+                                    backgroundImage:
+                                        index === 1
+                                            ? `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose4.webp)`
+                                            : "none",
+                                    // backgroundSize: "cover",
+                                    backgroundPosition: {
+                                        xs: "50% 0%",
+                                        md: "65% 70%",
+                                    },
+
                                     borderLeft: {
                                         xs: "none",
                                         md: index === 1 ? theme.border : "none",
@@ -53,7 +63,7 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                         starting at
                                     </Typography>
                                     <Typography
-                                        variant="h6"
+                                        variant="h4"
                                         sx={{
                                             textAlign: "center",
                                             color: theme.palette.custom.accent,
@@ -67,7 +77,7 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                             sx={{
                                                 textAlign: "center",
                                                 color: theme.palette.custom
-                                                    .darkMuted,
+                                                    .dark,
                                             }}
                                         >
                                             {service.content}
@@ -115,9 +125,9 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                 <Box sx={{ marginTop: "4rem" }}>
                                     <Link
                                         href={service.button.href}
-                                        onClick={() => {
-                                            navigateToTop();
-                                        }}
+                                        // onClick={() => {
+                                        //     navigateToTop();
+                                        // }}
                                     >
                                         <Button
                                             onClick={() => {

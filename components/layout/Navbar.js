@@ -66,7 +66,7 @@ const Navbar = () => {
     };
 
     const handleMouseEnter = () => {
-        setExpanded(true);
+        setExpanded(false);
     };
 
     const handleMouseLeave = () => {
@@ -142,11 +142,11 @@ const Navbar = () => {
                                 </Menu>
                             </Box>
                         </Grid>
-                        <Grid item xs>
+                        <Grid item xs={9}>
                             <Box
                                 sx={{
                                     display: "flex",
-                                    alignItems: "center",
+                                    alignItems: "end",
                                     justifyContent: "center",
                                     height: "100%",
                                     width: "100%",
@@ -161,8 +161,7 @@ const Navbar = () => {
                                     sx={{
                                         display: { xs: "flex", xl: "none" },
                                         fontSize: "1.75rem",
-                                        textAlign: "center",
-                                        width: "100%",
+                                        textAlign: "end",
                                         fontWeight: 700,
                                         transition: "1000ms",
                                         color: theme.palette.custom.light,
@@ -194,37 +193,37 @@ const Navbar = () => {
                                             maxSize={85}
                                         />
                                     </Box> */}
-                                    <Typography
-                                        // className="nav-link"
-                                        variant="h4"
-                                        onClick={() => {
-                                            navigateToTop();
-                                        }}
-                                        sx={{
-                                            margin: "0",
-                                            transition: "300ms",
-                                            fontSize: titleFontSize,
-                                            textAlign: "center",
-                                            color:
-                                                currentPage === ""
-                                                    ? theme.palette.custom.light
-                                                    : theme.palette.custom
-                                                          .lightMuted,
-                                            "&:hover": {
-                                                color: theme.palette.custom
-                                                    .light,
-                                            },
-                                        }}
-                                    >
-                                        <Link href="/">
-                                            <Box>
-                                                F /{" "}
-                                                <span className="color-accent">
-                                                    W
-                                                </span>
-                                            </Box>
-                                        </Link>
-                                    </Typography>
+                                    <Link href="/">
+                                        <Typography
+                                            // className="nav-link"
+                                            variant="h3"
+                                            onClick={() => {
+                                                navigateToTop();
+                                            }}
+                                            sx={{
+                                                margin: "0",
+                                                transition: "300ms",
+                                                fontSize: titleFontSize,
+                                                textAlign: "center",
+                                                cursor: "pointer",
+                                                color:
+                                                    currentPage === ""
+                                                        ? theme.palette.custom
+                                                              .light
+                                                        : theme.palette.custom
+                                                              .lightMuted,
+                                                "&:hover": {
+                                                    color: theme.palette.custom
+                                                        .light,
+                                                },
+                                            }}
+                                        >
+                                            F /{" "}
+                                            <span className="color-accent">
+                                                W
+                                            </span>
+                                        </Typography>
+                                    </Link>
                                 </Box>
                             </Grid>
                             <Grid item xs={8}>
