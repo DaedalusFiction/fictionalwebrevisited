@@ -12,7 +12,7 @@ const Template = ({ template }) => {
             sx={{
                 padding: theme.custom.spacing.medium,
                 borderRight: { xs: "none", md: theme.border },
-                borderBottom: { md: "none", xs: theme.border },
+                borderBottom: theme.border,
                 display: "flex",
                 flexDirection: "column",
                 height: "100%",

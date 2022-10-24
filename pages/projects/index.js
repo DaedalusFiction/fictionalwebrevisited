@@ -9,11 +9,7 @@ import theme from "../../styles/themes/theme";
 const index = () => {
     return (
         <PageLayout name="OUR WORK">
-            <Grid
-                container
-                className="border-top border-bottom"
-                sx={{ marginTop: "4rem" }}
-            >
+            <Grid container className="border-top border-bottom">
                 <Grid item xs={12} md={6}>
                     <Box
                         sx={{
@@ -37,8 +33,8 @@ const index = () => {
                         <br />
                         <Typography sx={{ textAlign: "end" }}>
                             Have a look at some of our past projects, and when
-                            you&apos;re fully convinced, reach out to us and let
-                            us know who you are and how we can help.
+                            you&rsquo;re fully convinced, reach out to us and
+                            let us know who you are and how we can help.
                         </Typography>
                     </Box>
                 </Grid>

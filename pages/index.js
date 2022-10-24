@@ -44,17 +44,19 @@ export default function Home() {
                     >
                         <Box>
                             <Typography>
-                                But that&apos;s perhaps a bit misleading. In the
-                                real world, <em>everything</em> tells a story.
+                                But that&rsquo;s perhaps a bit misleading. In
+                                the real world, <em>everything</em> tells a
+                                story.
                             </Typography>
                             <br />
                             <Typography>
-                                If you&apos;re a chef, your menu tells the story
-                                of your heritage and your taste. If you&apos;re
-                                a photographer, your portfolio tells the story
-                                of how you see the world and how that vision has
-                                changed and changes over time. If you&apos;re a
-                                novelist... Well, your stories tell stories.
+                                If you&rsquo;re a chef, your menu tells the
+                                story of your heritage and your taste. If
+                                you&rsquo;re a photographer, your portfolio
+                                tells the story of how you see the world and how
+                                that vision has changed and changes over time.
+                                If you&rsquo;re a novelist... Well, your stories
+                                tell stories.
                             </Typography>
                             <br />
                             <Typography>
@@ -64,6 +66,10 @@ export default function Home() {
                                 Everything about your website colors it, from
                                 the fonts and the images to the animated
                                 elements and the use of negative space.
+                            </Typography>
+                            <br />
+                            <Typography>
+                                Your website tells the story of who you are.
                             </Typography>
                             <br />
                         </Box>
@@ -133,7 +139,7 @@ export default function Home() {
                             >
                                 Our background in newspaper and fiction editing
                                 has given us an ear for language. If you know
-                                what you want to tell people but aren&apos;t
+                                what you want to tell people but aren&rsquo;t
                                 sure quite how to word it, we can help.
                             </Typography>
                         </Box>
@@ -165,8 +171,8 @@ export default function Home() {
                             component="h6"
                             sx={{ maxWidth: "40rem" }}
                         >
-                            You won&apos;t know what your story is about until
-                            it&apos;s finished.
+                            You won&rsquo;t know what your story is about until
+                            it&rsquo;s finished.
                         </Typography>
                     </Box>
                 </Grid>

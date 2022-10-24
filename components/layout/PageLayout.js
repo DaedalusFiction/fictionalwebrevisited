@@ -11,12 +11,14 @@ const PageLayout = ({ name, children }) => {
             <Box sx={{ paddingTop: "8rem" }}>
                 <Meta siteName={name} />
 
-                <Typography
-                    variant="h1"
-                    sx={{ textAlign: "center", marginBottom: "4rem" }}
-                >
-                    {name}
-                </Typography>
+                <Box className="gradient">
+                    <Typography
+                        variant="h1"
+                        sx={{ textAlign: "center", paddingBottom: "4rem" }}
+                    >
+                        {name}
+                    </Typography>
+                </Box>
                 {children}
             </Box>
         </>

@@ -35,34 +35,22 @@ const Project = ({ project, index }) => {
             </Grid>
             <Grid item xs={12} md={7}>
                 <Box
-                    className="border-bottom"
+                    className="border-bottom gradient"
                     sx={{
                         height: "100%",
                         padding: theme.custom.spacing.medium,
                         display: "flex",
                         flexDirection: "column",
-                        // alignItems: project.reversed ? "end" : "start",
                     }}
                 >
-                    <Typography
-                        variant="caption"
-                        // sx={{ textAlign: project.reversed ? "end" : "start" }}
-                    >
-                        [{project.type}]
-                    </Typography>
-                    <Typography
-                        variant="h2"
-                        // sx={{ textAlign: project.reversed ? "end" : "start" }}
-                    >
-                        {project.name}
-                    </Typography>
+                    <Typography variant="caption">[{project.type}]</Typography>
+                    <Typography variant="h2">{project.name}</Typography>
                     <br />
                     <Typography
                         variant="body2"
                         sx={{
                             whiteSpace: "pre-wrap",
                             maxWidth: "65ch",
-                            // textAlign: project.reversed ? "end" : "start",
                         }}
                     >
                         {project.details}
@@ -86,8 +74,8 @@ const Project = ({ project, index }) => {
                         backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(${project.dividerImageUrl})`,
                         // backgroundSize: "cover",
                         backgroundPosition: {
-                            xs: "50% 30%",
-                            md: "25% 30%",
+                            xs: "20% 40%",
+                            md: "25% 40%",
                         },
                     }}
                 ></Box>

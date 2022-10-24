@@ -11,7 +11,7 @@ import theme from "../../styles/themes/theme";
 const index = () => {
     return (
         <PageLayout name="TEMPLATES">
-            <Grid container className="border-top border-bottom">
+            <Grid container className="border-top border-bottom ">
                 <Grid item xs={12} md={5}>
                     <Box
                         sx={{
@@ -50,8 +50,8 @@ const index = () => {
                         }}
                     >
                         <Typography>
-                            But that doesn&apos;t mean there isn&apos;t room for
-                            you to put your own spin on things. All of our
+                            But that doesn&rsquo;t mean there isn&rsquo;t room
+                            for you to put your own spin on things. All of our
                             templates are built exclusively by us in React and
                             MUI, two of the latest JavaScript and CSS
                             frameworks. This means that your website will be
@@ -61,24 +61,24 @@ const index = () => {
                         </Typography>
                         <br />
                         <Typography>
-                            A templated website holds it&apos;s own, but it can
+                            A templated website holds it&rsquo;s own, but it can
                             also be a great starting point. Like every website
                             we build, small changes are as simple as letting us
-                            know what you&apos;d like changed, while larger
+                            know what you&rsquo;d like changed, while larger
                             changes, such as adding pages, reorganizing layout,
                             or updating the aesthetic, can be accomplished at an
                             hourly rate or an agreed-upon price.
                         </Typography>
                         <br />
                         <Typography>
-                            If you&apos;re on a budget, or if for any reason
-                            you&apos;d prefer to start small, a template can be
+                            If you&rsquo;re on a budget, or if for any reason
+                            you&rsquo;d prefer to start small, a template can be
                             a great choice.
                         </Typography>
                     </Box>
                 </Grid>
             </Grid>
-            <Grid container className="border-bottom">
+            <Grid container>
                 {templatesContent.map((template, index) => {
                     return (
                         <Grid item xs={12} md={4} key={index}>
@@ -86,6 +86,20 @@ const index = () => {
                         </Grid>
                     );
                 })}
+                <Grid item xs={12} md={4} key={index}>
+                    <Box
+                        className="border-bottom"
+                        sx={{
+                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose3.webp)`,
+                            // backgroundSize: "cover",
+                            backgroundPosition: {
+                                xs: "50% 0%",
+                                md: "25% 30%",
+                            },
+                            height: "100%",
+                        }}
+                    ></Box>
+                </Grid>
             </Grid>
             <Grid container className="border-bottom">
                 <Grid item xs={12} md={6}>
@@ -112,15 +126,9 @@ const index = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <Box
+                        className="gradient"
                         sx={{
                             padding: theme.custom.spacing.medium,
-
-                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose5.webp)`,
-                            // backgroundSize: "cover",
-                            backgroundPosition: {
-                                xs: "50% 0%",
-                                md: "25% 30%",
-                            },
                             height: "100%",
                         }}
                     >

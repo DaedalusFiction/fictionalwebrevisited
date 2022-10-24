@@ -165,41 +165,51 @@ const servicesContent = [
 
 const templatesContent = [
     {
-        name: "Musician",
+        name: "Author",
         image: {
-            url: "/images/academicScreencap.webp",
-            alt: "nautilus shell design",
+            url: "/images/authorScreencap.webp",
+            alt: "author template website screenshot",
         },
-        href: "https://google.com",
-        price: "$499",
+        href: "https://fictionalweb-author.com",
+        price: "$399",
         features: [
             {
-                name: "Photo Gallery",
+                name: "Books and Published Works Showcase",
                 description:
-                    "Upload high-quality images that venues and press can use to promote your music",
+                    "Display your books, articles, and other publications with descriptions and links to vendors.",
             },
             {
                 name: "Events Page",
                 description:
                     "Create events with date, time, description, venue location and link. Past events archive automatically.",
             },
+            {
+                name: "Social Media and Other Links",
+                description:
+                    "Direct visitors to your other social media platforms and online media.",
+            },
+            {
+                name: "Newsletter Sign-Up box",
+                description:
+                    "Gather email addresses that you can use to create a newsletter and keep people up-to-date.",
+            },
         ],
         button: {
             href: "/contact",
-            text: "Get started with custom",
+            text: "Get Started",
             variant: "outlined",
         },
 
         description:
-            "Perfect for groups, solo acts, students, songwriters, or anyone ready to melt faces.",
+            "This is great for authors who want to quickly create a place where visitors can quickly access your information.",
     },
     {
         name: "Musician",
         image: {
             url: "/images/cosimaScreencap.webp",
-            alt: "nautilus shell design",
+            alt: "musician template website screenshot",
         },
-        href: "https://google.com",
+        href: "https://fictionalweb-musician.com",
         price: "$499",
         features: [
             {
@@ -208,32 +218,85 @@ const templatesContent = [
                     "Upload high-quality images that venues and press can use to promote your music",
             },
             {
-                name: "Events Page",
+                name: "Music Samples",
                 description:
-                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+                    "Dedicated page for visitors to sample your music, straight from the website",
             },
             {
                 name: "Events Page",
                 description:
                     "Create events with date, time, description, venue location and link. Past events archive automatically.",
             },
+            {
+                name: "Social Media and Other Links",
+                description:
+                    "Direct visitors to your other social media platforms and online media.",
+            },
+            {
+                name: "Newsletter Sign-Up box",
+                description:
+                    "Gather email addresses that you can use to create a newsletter and keep people up-to-date.",
+            },
         ],
         button: {
             href: "/contact",
-            text: "Get started with custom",
+            text: "Get started",
             variant: "outlined",
         },
         description:
             "Perfect for groups, solo acts, students, songwriters, or anyone ready to melt faces.",
     },
     {
-        name: "Musician",
+        name: "Academic",
         image: {
-            url: "/images/cosimaScreencap.webp",
-            alt: "nautilus shell design",
+            url: "/images/academicScreencap.webp",
+            alt: "academic template website screenshot",
         },
-        href: "https://google.com",
-        price: "$499",
+        href: "https://fictionalweb-academic.com",
+        price: "$599",
+        features: [
+            {
+                name: "Books and Published Works Showcase",
+                description:
+                    "Display your books, articles, and other publications with descriptions and links to vendors.",
+            },
+            {
+                name: "Curriculum Vitae",
+                description:
+                    "Display your CV as a pdf in the browser, and get a custom admin panel to update it as often as you like.",
+            },
+            {
+                name: "Events Page",
+                description:
+                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+            },
+            {
+                name: "Social Media and Other Links",
+                description:
+                    "Direct visitors to your other social media platforms and online media.",
+            },
+            {
+                name: "Newsletter Sign-Up box",
+                description:
+                    "Gather email addresses that you can use to create a newsletter and keep people up-to-date.",
+            },
+        ],
+        button: {
+            href: "/contact",
+            text: "Get started",
+            variant: "outlined",
+        },
+        description:
+            "With a personal website academics can make sure that all of their information is up to date and easily accessible.",
+    },
+    {
+        name: "Designer",
+        image: {
+            url: "/images/designerScreencap.webp",
+            alt: "designer template website screenshot",
+        },
+        href: "https://fictionalweb-designer.com",
+        price: "$699",
         features: [
             {
                 name: "Photo Gallery",
@@ -241,28 +304,91 @@ const templatesContent = [
                     "Upload high-quality images that venues and press can use to promote your music",
             },
             {
-                name: "Events Page",
+                name: "Mosaic Layout Sections",
                 description:
-                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+                    "Three mosaic layouts to display selections of your work, with custom descriptions and links.",
             },
             {
-                name: "Events Page",
+                name: "Social Media and Other Links",
                 description:
-                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+                    "Direct visitors to your other social media platforms and online media.",
+            },
+            {
+                name: "Process Page",
+                description:
+                    "Let potential clients know what your process looks like, with as many steps as you like, so that they can feel reassured.",
+            },
+            {
+                name: "Contact Page",
+                description:
+                    "Get details information from visitors, including their names, email addresses, interests, and anything else you'd like.",
+            },
+            {
+                name: "Newsletter Sign-Up box",
+                description:
+                    "Gather email addresses that you can use to create a newsletter and keep people up-to-date.",
             },
         ],
         button: {
             href: "/contact",
-            text: "Get started with custom",
+            text: "Get started",
             variant: "outlined",
         },
         description:
-            "Perfect for groups, solo acts, students, songwriters, or anyone ready to melt faces.",
+            "With this beautifully laid-out website you can showcase your hard work, inform visitors of what the process looks like, and generate those leads!",
+    },
+    {
+        name: "Blog",
+        image: {
+            url: "/images/blogScreencap.webp",
+            alt: "blog template website screenshot",
+        },
+        href: "https://fictionalweb-blog.com",
+        price: "$799",
+        features: [
+            {
+                name: "Markdown-supported Articles",
+                description:
+                    "Leverage the power of Markdown to create beautiful content that will set you apart.",
+            },
+            {
+                name: "Admin Page",
+                description:
+                    "Create, update, or delete articles straight from the browser, and watch them appear instantly.",
+            },
+            {
+                name: "Social Media and Other Links",
+                description:
+                    "Direct visitors to your other social media platforms and online media.",
+            },
+            {
+                name: "Submissions Page",
+                description:
+                    "Let visitors submit their own work, as text files or images.",
+            },
+            {
+                name: "Contact Page",
+                description:
+                    "Get details information from visitors, including their names, email addresses, interests, and anything else you'd like.",
+            },
+            {
+                name: "Newsletter Sign-Up box",
+                description:
+                    "Gather email addresses that you can use to create a newsletter and keep people up-to-date.",
+            },
+        ],
+        button: {
+            href: "/contact",
+            text: "Get started",
+            variant: "outlined",
+        },
+        description:
+            "With this beautifully laid-out website you can showcase your hard work, inform visitors of what the process looks like, and generate those leads!",
     },
 ];
 
 const contactConfig = {
-    website: "SICKTOOTH",
+    website: "FICTIONAL WEB",
     category: "contact",
     fields: [
         { name: "Name", type: "text", value: "" },
