@@ -337,9 +337,12 @@ const projectsContent = [
         },
         technologies: ["Next.js", "MUI", "Markdown", "Firebase"],
         type: "Literary magazine",
+        dividerImageUrl: "/images/rose5.webp",
         description:
             "Website created for literary magazine Sicktooth. Stories, poetry, and articles are easily uploaded via a custom admin panel.",
         href: "https://sicktooth.com",
+        details:
+            "This is a longer description of the website. Here we can talk about what we did and how it helped the client.",
     },
     {
         name: "Cosima Hewes",
@@ -350,6 +353,10 @@ const projectsContent = [
         technologies: ["Next.js", "MUI", "Firebase"],
         type: "Artist Portfolio",
         href: "https://cosimahewes.com",
+        dividerImageUrl: "/images/rose4.webp",
+        reversed: true,
+        details:
+            "This is a longer description of the website. Here we can talk about what we did and how it helped the client.",
         description:
             "Website created for artist Cosima Hewes. Features a photo gallery with categories and subcategories that can be easily adjusted. ",
     },
@@ -363,6 +370,9 @@ const projectsContent = [
         type: "Musician Portfolio",
         description: "Client can quickly add, delete, or edit events.",
         href: "https://zuzushotfive.com",
+        dividerImageUrl: "/images/rose3.webp",
+        details:
+            "This is a longer description of the website. Here we can talk about what we did and how it helped the client.",
     },
     {
         name: "Josh Stehle",
@@ -372,9 +382,13 @@ const projectsContent = [
         },
         technologies: ["Next.js", "MUI", "Firebase"],
         type: "Author Portfolio",
+        reversed: true,
+        dividerImageUrl: "/images/rose2.webp",
         description:
             "Website created for author and autism advocate Josh Stehle. Contact form allows client to build newsletter mailing list.",
         href: "https://joshstehle.com",
+        details:
+            "This is a longer description of the website. Here we can talk about what we did and how it helped the client. This can be any length you like.\n\nIt can even support multiple paragraphs. Maybe even other stuff.\n\nPretty cool, huh?",
     },
 ];
 

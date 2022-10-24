@@ -1,27 +1,34 @@
 import { Box, Button, Grid, Link, Typography } from "@mui/material";
-import { Container } from "@mui/system";
 import SizedImage from "../../components/general/SizedImage";
-import { aboutContent, pages, secondaryProfiles } from "../../siteInfo";
+import { aboutContent } from "../../siteInfo";
 import PageLayout from "../../components/layout/PageLayout";
-import AboutNavbar from "../../components/about/AboutNavbar";
+import theme from "../../styles/themes/theme";
 
 const index = () => {
     return (
         <PageLayout name="ABOUT">
-            <AboutNavbar />
-            <Box className="section">
-                <Grid container spacing={6}>
-                    <Grid item xs={12} md={6}>
-                        <SizedImage
-                            height="30rem"
-                            width="100%"
-                            image={aboutContent.image}
-                        />
-                        <Typography variant="caption">
-                            {aboutContent.image.alt}
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
+            <Grid container className="border-top border-bottom">
+                <Grid item xs={12} md={3}>
+                    <Box
+                        sx={{
+                            borderRight: { xs: "none", md: theme.border },
+                            height: "100%",
+                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .75), rgba(255, 252, 235, 0.75)), url(/images/rose2.webp)`,
+                            // backgroundSize: "cover",
+                            backgroundPosition: {
+                                xs: "50% 30%",
+                                md: "45% 50%",
+                            },
+                        }}
+                    ></Box>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Box
+                        sx={{
+                            padding: theme.custom.spacing.medium,
+                            borderRight: { xs: "none", md: theme.border },
+                        }}
+                    >
                         <Typography variant="h3">
                             {aboutContent.name}
                         </Typography>
@@ -29,29 +36,22 @@ const index = () => {
                         <Typography sx={{ whiteSpace: "pre-wrap" }}>
                             {aboutContent.content}
                         </Typography>
-                        {/* <Box
-                            sx={{
-                                display: "flex",
-                                gap: "1em",
-                                marginTop: "3rem",
-                            }}
-                        >
-                            {aboutContent.buttons.map((button, index) => {
-                                return (
-                                    <Link key={index} href={button.href}>
-                                        <Button
-                                            size="large"
-                                            variant="contained"
-                                        >
-                                            {button.text}
-                                        </Button>
-                                    </Link>
-                                );
-                            })}
-                        </Box> */}
-                    </Grid>
+                    </Box>
                 </Grid>
-            </Box>
+                <Grid item xs={12} md={3}>
+                    <Box
+                        sx={{
+                            height: "100%",
+                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose3.webp)`,
+                            // backgroundSize: "cover",
+                            backgroundPosition: {
+                                xs: "50% 30%",
+                                md: "75% 30%",
+                            },
+                        }}
+                    ></Box>
+                </Grid>
+            </Grid>
         </PageLayout>
     );
 };

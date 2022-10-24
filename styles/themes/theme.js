@@ -69,7 +69,7 @@ theme = createTheme(theme, {
             fontFamily: theme.font.accent,
             fontWeight: "600",
             // color: darkTheme.palette.custom.dark,
-            fontSize: "clamp(2rem, 2.25vw, 10rem)",
+            fontSize: "clamp(3rem, 4vw, 7rem)",
             letterSpacing: ".025em",
         },
         h3: {
