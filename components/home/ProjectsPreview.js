@@ -60,15 +60,10 @@ const Portfolio = () => {
                             sx={{
                                 display: "flex",
                                 width: "100%",
-                                justifyContent: { xs: "center", md: "end" },
+                                justifyContent: { xs: "start", md: "end" },
                             }}
                         >
-                            <Link
-                                href="/projects"
-                                onClick={() => {
-                                    navigateToTop();
-                                }}
-                            >
+                            <Link href="/projects">
                                 <Button
                                     color="secondary"
                                     endIcon={<ArrowRightAltIcon />}

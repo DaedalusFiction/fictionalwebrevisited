@@ -90,7 +90,6 @@ const Navbar = () => {
                         <Grid item xs={3}>
                             <Box
                                 sx={{
-                                    flexGrow: 1,
                                     display: { xs: "flex", xl: "none" },
                                 }}
                             >
@@ -145,8 +144,8 @@ const Navbar = () => {
                         <Grid item xs={9}>
                             <Box
                                 sx={{
-                                    display: "flex",
-                                    alignItems: "end",
+                                    display: { xs: "flex", md: "none" },
+                                    alignItems: "center",
                                     justifyContent: "center",
                                     height: "100%",
                                     width: "100%",
@@ -159,11 +158,9 @@ const Navbar = () => {
                                         navigateToTop();
                                     }}
                                     sx={{
-                                        display: { xs: "flex", xl: "none" },
                                         fontSize: "1.75rem",
                                         textAlign: "end",
                                         fontWeight: 700,
-                                        transition: "1000ms",
                                         color: theme.palette.custom.light,
                                     }}
                                 >

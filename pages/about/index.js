@@ -33,8 +33,43 @@ const index = () => {
                             {aboutContent.name}
                         </Typography>
                         <br />
-                        <Typography sx={{ whiteSpace: "pre-wrap" }}>
-                            {aboutContent.content}
+                        <Typography>
+                            Websites can be expensive. And building one
+                            yourself, especially if you want something fast,
+                            reliable, and uniquely yours, always seems to take
+                            more time and effor than website builders such as
+                            Wordpress, Wix, and Squarespace would have you
+                            believe. That&rsquo;s why, when we founded Fictional
+                            Web in the Spring of 2022, we had one goal in mind:
+                            Find a way to quickly and reliably generate quality
+                            websites for artists.
+                        </Typography>
+                        <br />
+                        <Typography>
+                            But we didn&rsquo;t stop there. We wanted to work
+                            with everyone in the arts, from musicians to
+                            craftspeople to designers and authors. And the more
+                            we worked with people, the more we realize that just
+                            about everything is artistic in some way.
+                        </Typography>
+                        <br />
+                        <Typography>
+                            If you&rsquo;re going to do anything meaningful on
+                            your own these days, you almost certainly need a
+                            website. And there are a lot of people out there who
+                            are working incredibly hard on what they do, but
+                            might not have the energy or resources to build a
+                            quality website on their own or hire a large agency
+                            to help them with it. Their work is meaningful, and
+                            we want to make sure that they have a solid
+                            opportunity to say what they want to say, to show
+                            the world what they want to show it.
+                        </Typography>
+                        <br />
+                        <Typography>
+                            If you have a story to tell&mdash;and we&rsquo;re
+                            pretty sure you do&mdash;then consider letting us be
+                            the ones to help you tell it.
                         </Typography>
                     </Box>
                 </Grid>

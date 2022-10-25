@@ -24,14 +24,18 @@ const index = () => {
                             },
                         }}
                     >
-                        <Typography sx={{ textAlign: "end" }}>
+                        <Typography
+                            sx={{ textAlign: { xs: "start", md: "end" } }}
+                        >
                             Fictional Web collaborates with artists, academics,
                             craftspeople, musicians, authors, and designers to
                             create websites that further their unique image and
                             vision.
                         </Typography>
                         <br />
-                        <Typography sx={{ textAlign: "end" }}>
+                        <Typography
+                            sx={{ textAlign: { xs: "start", md: "end" } }}
+                        >
                             Have a look at some of our past projects, and when
                             you&rsquo;re fully convinced, reach out to us and
                             let us know who you are and how we can help.

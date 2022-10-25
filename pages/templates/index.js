@@ -28,12 +28,12 @@ const index = () => {
                         <Typography
                             variant="h1"
                             sx={{
-                                textAlign: "end",
+                                textAlign: { xs: "center", md: "end" },
                                 maxWidth: "30rem",
                                 color: theme.palette.custom.light,
                             }}
                         >
-                            There is nothing new under the Sun
+                            There is nothing new under the sun
                         </Typography>
                     </Box>
                 </Grid>

@@ -21,13 +21,17 @@ export default function Home() {
                     <Box
                         className="gradient border-bottom"
                         sx={{
-                            padding: theme.custom.spacing.large,
+                            padding: theme.custom.spacing.medium,
                             borderRight: { xs: "none", md: theme.border },
                             height: "100%",
                         }}
                     >
-                        <Typography variant="h1" sx={{ textAlign: "end" }}>
-                            We create websites that tell stories.
+                        <Typography
+                            variant="h2"
+                            sx={{ textAlign: { xs: "center", md: "end" } }}
+                        >
+                            The journey of a thousand miles begins with a single
+                            click.
                         </Typography>
                     </Box>
                 </Grid>
@@ -44,9 +48,9 @@ export default function Home() {
                     >
                         <Box>
                             <Typography>
-                                But that&rsquo;s perhaps a bit misleading. In
-                                the real world, <em>everything</em> tells a
-                                story.
+                                We build websites that tell stories. But
+                                that&rsquo;s perhaps a bit misleading. In the
+                                real world, <em>everything</em> tells a story.
                             </Typography>
                             <br />
                             <Typography>
@@ -77,7 +81,7 @@ export default function Home() {
                             sx={{
                                 display: "flex",
                                 justifyContent: "space-between",
-                                gap: "1rem",
+                                gap: "2rem",
                                 flexWrap: "wrap",
                             }}
                         >
@@ -107,7 +111,7 @@ export default function Home() {
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "space-between",
-                            alignItems: "end",
+                            alignItems: { xs: "start", md: "end" },
                             borderRight: { xs: "none", md: theme.border },
                             padding: theme.custom.spacing.small,
                             background: theme.palette.primary.main,
@@ -117,14 +121,14 @@ export default function Home() {
                             sx={{
                                 display: "flex",
                                 flexDirection: "column",
-                                alignItems: "end",
+                                alignItems: { xs: "start", md: "end" },
                             }}
                         >
                             <Typography
                                 variant="h3"
                                 sx={{
                                     color: theme.palette.custom.light,
-                                    textAlign: "end",
+                                    textAlign: { xs: "center", md: "end" },
                                 }}
                             >
                                 Copyediting comes standard.
@@ -134,7 +138,7 @@ export default function Home() {
                                 sx={{
                                     maxWidth: "45ch",
                                     color: theme.palette.custom.lightMuted,
-                                    textAlign: "end",
+                                    textAlign: { xs: "start", md: "end" },
                                 }}
                             >
                                 Our background in newspaper and fiction editing
@@ -169,7 +173,10 @@ export default function Home() {
                         <Typography
                             variant="h1"
                             component="h6"
-                            sx={{ maxWidth: "40rem" }}
+                            sx={{
+                                maxWidth: "40rem",
+                                textAlign: { xs: "center", md: "start" },
+                            }}
                         >
                             You won&rsquo;t know what your story is about until
                             it&rsquo;s finished.
