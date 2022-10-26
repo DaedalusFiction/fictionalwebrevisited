@@ -12,7 +12,23 @@ const ServicesShowcase = ({ services, isPreview }) => {
             <Grid container>
                 {services.map((service, index) => {
                     return (
-                        <Grid item xs={12} md={4} key={index}>
+                        <Grid
+                            item
+                            xs={12}
+                            md={4}
+                            key={index}
+                            sx={{
+                                backgroundImage:
+                                    index === 1
+                                        ? `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose4.webp)`
+                                        : "none",
+                                // backgroundSize: "cover",
+                                backgroundPosition: {
+                                    xs: "50% 0%",
+                                    md: "65% 70%",
+                                },
+                            }}
+                        >
                             <Box
                                 className="border-bottom"
                                 sx={{
@@ -29,15 +45,15 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                     paddingTop: theme.custom.spacing.xl,
                                     paddingBottom: theme.custom.spacing.xl,
 
-                                    backgroundImage:
-                                        index === 1
-                                            ? `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose4.webp)`
-                                            : "none",
-                                    // backgroundSize: "cover",
-                                    backgroundPosition: {
-                                        xs: "50% 0%",
-                                        md: "65% 70%",
-                                    },
+                                    // backgroundImage:
+                                    //     index === 1
+                                    //         ? `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose4.webp)`
+                                    //         : "none",
+                                    // // backgroundSize: "cover",
+                                    // backgroundPosition: {
+                                    //     xs: "50% 0%",
+                                    //     md: "65% 70%",
+                                    // },
 
                                     borderLeft: {
                                         xs: "none",

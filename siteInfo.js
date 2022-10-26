@@ -170,7 +170,7 @@ const templatesContent = [
             url: "/images/artistScreencap4.webp",
             alt: "artist template website screenshot",
         },
-        href: "https://fictionalweb-artist.com",
+        href: "https://fictionalweb-artist.netlify.app",
         price: "$499",
         features: [
             {
@@ -214,7 +214,7 @@ const templatesContent = [
             url: "/images/authorScreencap.webp",
             alt: "author template website screenshot",
         },
-        href: "https://fictionalweb-author.com",
+        href: "https://fictionalweb-author.netlify.app",
         price: "$399",
         features: [
             {
@@ -253,7 +253,7 @@ const templatesContent = [
             url: "/images/musicianScreencap.webp",
             alt: "musician template website screenshot",
         },
-        href: "https://fictionalweb-musician.com",
+        href: "https://fictionalweb-musician.netlify.app",
         price: "$499",
         features: [
             {
@@ -296,7 +296,7 @@ const templatesContent = [
             url: "/images/academicScreencap.webp",
             alt: "academic template website screenshot",
         },
-        href: "https://fictionalweb-academic.com",
+        href: "https://fictionalweb-academic.netlify.app",
         price: "$599",
         features: [
             {
@@ -339,7 +339,7 @@ const templatesContent = [
             url: "/images/designerScreencap.webp",
             alt: "designer template website screenshot",
         },
-        href: "https://fictionalweb-designer.com",
+        href: "https://fictionalweb-designer.netlify.app",
         price: "$699",
         features: [
             {
@@ -387,7 +387,7 @@ const templatesContent = [
             url: "/images/blogScreencap.webp",
             alt: "blog template website screenshot",
         },
-        href: "https://fictionalweb-blog.com",
+        href: "https://fictionalweb-blog.netlify.app",
         price: "$799",
         features: [
             {
