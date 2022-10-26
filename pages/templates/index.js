@@ -52,7 +52,7 @@ const index = () => {
                         <Typography>
                             But that doesn&rsquo;t mean there isn&rsquo;t room
                             for you to put your own spin on things. All of our
-                            templates are built exclusively by us in React and
+                            templates are built exclusively by us in Next.js and
                             MUI, two of the latest JavaScript and CSS
                             frameworks. This means that your website will be
                             extremely fast, will look great on any mobile
@@ -86,7 +86,7 @@ const index = () => {
                         </Grid>
                     );
                 })}
-                <Grid item xs={12} md={4} key={index}>
+                <Grid item xs={12}>
                     <Box
                         className="border-bottom"
                         sx={{
@@ -96,7 +96,7 @@ const index = () => {
                                 xs: "50% 0%",
                                 md: "25% 30%",
                             },
-                            height: "100%",
+                            height: "10rem",
                         }}
                     ></Box>
                 </Grid>

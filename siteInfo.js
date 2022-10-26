@@ -165,6 +165,50 @@ const servicesContent = [
 
 const templatesContent = [
     {
+        name: "Artist",
+        image: {
+            url: "/images/artistScreencap4.webp",
+            alt: "artist template website screenshot",
+        },
+        href: "https://fictionalweb-artist.com",
+        price: "$499",
+        features: [
+            {
+                name: "Photo Gallery",
+                description:
+                    "Upload high-quality images of your work. Supports any number of categories and subcategories.",
+            },
+            {
+                name: "About Pages",
+                description:
+                    "Create up to four About pages for your bio, your studio, your process, and your work itself. Or anything else you like.",
+            },
+            {
+                name: "Events Page",
+                description:
+                    "Create events with date, time, description, venue location and link. Past events archive automatically.",
+            },
+            {
+                name: "Social Media and Other Links",
+                description:
+                    "Direct visitors to your other social media platforms and online media.",
+            },
+            {
+                name: "Newsletter Sign-Up box",
+                description:
+                    "Gather email addresses that you can use to create a newsletter and keep people up-to-date.",
+            },
+        ],
+        button: {
+            href: "/contact",
+            text: "Get Started",
+            variant: "outlined",
+        },
+
+        description:
+            "This is great for authors who want to quickly create a place where visitors can quickly access your information.",
+    },
+    {
         name: "Author",
         image: {
             url: "/images/authorScreencap.webp",
@@ -206,7 +250,7 @@ const templatesContent = [
     {
         name: "Musician",
         image: {
-            url: "/images/cosimaScreencap.webp",
+            url: "/images/musicianScreencap.webp",
             alt: "musician template website screenshot",
         },
         href: "https://fictionalweb-musician.com",
@@ -383,7 +427,7 @@ const templatesContent = [
             variant: "outlined",
         },
         description:
-            "With this beautifully laid-out website you can showcase your hard work, inform visitors of what the process looks like, and generate those leads!",
+            "Carve out your own nice of the internet with this no-frills blog template. Works great for online magazines with it's customizeable submissions forms.",
     },
 ];
 
@@ -456,19 +500,19 @@ const secondaryProfiles = [
 
 const projectsContent = [
     {
-        name: "Sicktooth",
+        name: "The Rumen",
         image: {
-            url: "/images/sicktoothScreencap.webp",
-            alt: "screenshot of sicktooth website",
+            url: "/images/rumenScreencap.webp",
+            alt: "screenshot of the rumen website",
         },
         technologies: ["Next.js", "MUI", "Markdown", "Firebase"],
         type: "Literary magazine",
         dividerImageUrl: "/images/rose5.webp",
         description:
-            "Website created for literary magazine Sicktooth. Stories, poetry, and articles are easily uploaded via a custom admin panel.",
-        href: "https://sicktooth.com",
+            "Website created for The Rumen, literary magazines that publishes short stories, poetry, and articles.",
+        href: "https://therumen.com",
         details:
-            "This is a longer description of the website. Here we can talk about what we did and how it helped the client.",
+            "For The Rumen we wanted something with a classic feel, similar to The New Yorker or Harper's, so we decided on a layout, font, and color scheme that gave the impression of reading a newspaper hot off the presses (with a Taylor ham on a hard roll and a cup of black coffee).\n\nWe set the website up so that the editors can upload, edit, and delete publications straight from the browser, do so securely through Firebase's OAuth 2.0 authentication system.",
     },
     {
         name: "Cosima Hewes",
@@ -481,24 +525,23 @@ const projectsContent = [
         href: "https://cosimahewes.com",
         dividerImageUrl: "/images/rose4.webp",
         reversed: true,
+        description: "Portfolio website for surrealist artist Cosima Hewes.",
         details:
-            "This is a longer description of the website. Here we can talk about what we did and how it helped the client.",
-        description:
-            "Website created for artist Cosima Hewes. Features a photo gallery with categories and subcategories that can be easily adjusted. ",
+            "Cosima wanted a place where she could host high-quality images of her work, in a place that was uniquely hers and tailored to her style and needs\n\nThe photo gallery supports any number of galleries and subgalleries, and adding or rearranging them is very easily done. ",
     },
     {
         name: "Zuzu's Hot Five",
         image: {
-            url: "/images/sicktoothScreencap.webp",
+            url: "/images/zuzusScreencap.webp",
             alt: "screenshot of Zuzu's website",
         },
         technologies: ["Next.js", "MUI", "Firebase"],
         type: "Musician Portfolio",
-        description: "Client can quickly add, delete, or edit events.",
-        href: "https://zuzushotfive.com",
+        description: "Band website.",
+        href: "https://fictionalweb-zuzus.netlify.app",
         dividerImageUrl: "/images/rose3.webp",
         details:
-            "This is a longer description of the website. Here we can talk about what we did and how it helped the client.",
+            "Zuzu's came to us with an existing site that worked great but could use a rebranding and a few additional features.\n\nThey had a way to list their shows, but it was a little cumbersome, so we set them up with a custom events page that they could access straigh from the browser, which automatically filters events to archives as they play.\n\nWe also set them up with a form to collect contact information and messages, so that they could get details to people who were interested in booking them for events.",
     },
     {
         name: "Josh Stehle",
@@ -506,15 +549,14 @@ const projectsContent = [
             url: "/images/joshScreencap.webp",
             alt: "screenshot of Josh Stehle website",
         },
-        technologies: ["Next.js", "MUI", "Firebase"],
+        technologies: ["Next.js", "MUI"],
         type: "Author Portfolio",
         reversed: true,
         dividerImageUrl: "/images/rose2.webp",
-        description:
-            "Website created for author and autism advocate Josh Stehle. Contact form allows client to build newsletter mailing list.",
+        description: "Author Website.",
         href: "https://joshstehle.com",
         details:
-            "This is a longer description of the website. Here we can talk about what we did and how it helped the client. This can be any length you like.\n\nIt can even support multiple paragraphs. Maybe even other stuff.\n\nPretty cool, huh?",
+            "When Josh came to us, he had just gotten his first book deal after running a social media account with over 20M views, and he needed a place for publicists and interested readers to quickly access information about him.\n\nWe decided on a simple three-page website that left room for him to expand with features that would allow events, a photo gallery, or a longer list of his publications once his career takes off.",
     },
 ];
 
