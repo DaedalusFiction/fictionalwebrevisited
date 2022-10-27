@@ -90,20 +90,32 @@ export default function Home() {
                                 justifyContent: "space-between",
                                 gap: "2rem",
                                 flexWrap: "wrap",
+                                marginBottom: ".75rem",
                             }}
                         >
                             <Typography>
                                 So make sure you tell it well.
                             </Typography>
-                            <Link href="/contact">
-                                <Button
-                                    endIcon={<ArrowRightAlt />}
-                                    variant="outlined"
-                                    color="secondary"
-                                >
-                                    View Services
-                                </Button>
-                            </Link>
+                            <Box
+                                sx={{
+                                    display: "flex",
+                                    justifyContent: {
+                                        xs: "center",
+                                        md: "start",
+                                    },
+                                    width: "100%",
+                                }}
+                            >
+                                <Link href="/contact">
+                                    <Button
+                                        endIcon={<ArrowRightAlt />}
+                                        variant="outlined"
+                                        color="secondary"
+                                    >
+                                        View Services
+                                    </Button>
+                                </Link>
+                            </Box>
                         </Box>
                     </Box>
                 </Grid>
@@ -159,7 +171,17 @@ export default function Home() {
                             </Typography>
                         </Box>
                         <br />
-                        <Box>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: {
+                                    xs: "center",
+                                    md: "end",
+                                },
+                                width: "100%",
+                                marginBottom: ".75rem",
+                            }}
+                        >
                             <Link href="/contact">
                                 <Button
                                     endIcon={<ArrowRightAlt />}

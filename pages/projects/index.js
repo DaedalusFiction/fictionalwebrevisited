@@ -13,7 +13,10 @@ const index = () => {
                 <Grid item xs={12} md={6}>
                     <Box
                         sx={{
-                            padding: theme.custom.spacing.medium,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
                             borderRight: { xs: "none", md: theme.border },
                             height: "100%",
                             backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose2.webp)`,
@@ -45,7 +48,10 @@ const index = () => {
                 <Grid item xs={12} md={6}>
                     <Box
                         sx={{
-                            padding: theme.custom.spacing.medium,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
                             backgroundColor: theme.palette.primary.main,
                             // borderRight: { xs: "none", md: theme.border },
                             height: "100%",
@@ -53,6 +59,7 @@ const index = () => {
                     >
                         <Typography
                             variant="h2"
+                            component="p"
                             sx={{
                                 color: theme.palette.custom.light,
                                 maxWidth: "35rem",
@@ -62,6 +69,7 @@ const index = () => {
                         </Typography>
                         <Typography
                             variant="h5"
+                            component="p"
                             sx={{
                                 color: theme.palette.custom.light,
                                 maxWidth: "35rem",

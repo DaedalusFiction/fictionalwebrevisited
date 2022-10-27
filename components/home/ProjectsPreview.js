@@ -63,7 +63,8 @@ const Portfolio = () => {
                             sx={{
                                 display: "flex",
                                 width: "100%",
-                                justifyContent: { xs: "start", md: "end" },
+                                justifyContent: { xs: "center", md: "end" },
+                                marginBottom: ".75rem",
                             }}
                         >
                             <Link href="/projects">
@@ -148,6 +149,8 @@ const Portfolio = () => {
                                                                             7.5 +
                                                                         "rem",
                                                                 },
+                                                                paddingBottom:
+                                                                    "1.5rem",
                                                                 transition:
                                                                     "300ms",
                                                             }}

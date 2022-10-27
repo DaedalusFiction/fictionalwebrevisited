@@ -1,5 +1,5 @@
-import { Button, Divider, Grid, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Button, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import CheckIcon from "@mui/icons-material/Check";
 import { ArrowRightAlt } from "@mui/icons-material";
 import theme from "../../styles/themes/theme";
@@ -44,16 +44,6 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                     paddingRight: theme.custom.spacing.small,
                                     paddingTop: theme.custom.spacing.xl,
                                     paddingBottom: theme.custom.spacing.xl,
-
-                                    // backgroundImage:
-                                    //     index === 1
-                                    //         ? `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose4.webp)`
-                                    //         : "none",
-                                    // // backgroundSize: "cover",
-                                    // backgroundPosition: {
-                                    //     xs: "50% 0%",
-                                    //     md: "65% 70%",
-                                    // },
 
                                     borderLeft: {
                                         xs: "none",

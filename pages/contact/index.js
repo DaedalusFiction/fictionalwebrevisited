@@ -19,7 +19,7 @@ const index = () => {
                                 }}
                             >
                                 <Box>
-                                    <Typography variant="h3">
+                                    <Typography variant="h3" component="h2">
                                         Get in Touch
                                     </Typography>
                                     <br />

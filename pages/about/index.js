@@ -25,11 +25,14 @@ const index = () => {
                 <Grid item xs={12} md={6}>
                     <Box
                         sx={{
-                            padding: theme.custom.spacing.medium,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
                             borderRight: { xs: "none", md: theme.border },
                         }}
                     >
-                        <Typography variant="h3">
+                        <Typography variant="h3" component="h2">
                             {aboutContent.name}
                         </Typography>
                         <br />

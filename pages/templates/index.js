@@ -123,7 +123,7 @@ const index = () => {
                             variant="h1"
                             sx={{
                                 color: theme.palette.custom.light,
-                                textAlign: "end",
+                                textAlign: { xs: "center", md: "end" },
                             }}
                         >
                             Close, but no cigar?
@@ -146,7 +146,17 @@ const index = () => {
                             utility of a template, but fine tune it to your
                             liking.
                         </Typography>
-                        <Box sx={{ marginTop: "2rem" }}>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: {
+                                    xs: "center",
+                                    md: "start",
+                                },
+                                width: "100%",
+                                marginTop: "2rem",
+                            }}
+                        >
                             <Link
                                 href="/contact"
 
