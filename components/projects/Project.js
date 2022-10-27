@@ -44,7 +44,9 @@ const Project = ({ project, index }) => {
                     }}
                 >
                     <Typography variant="caption">[{project.type}]</Typography>
-                    <Typography variant="h2">{project.name}</Typography>
+                    <Typography variant="h2" component="h3">
+                        {project.name}
+                    </Typography>
                     <br />
                     <Typography
                         variant="body2"

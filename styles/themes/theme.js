@@ -12,7 +12,7 @@ let theme = createTheme({
         },
         secondary: {
             // main: "#CBEAA6",
-            main: "#ff0000",
+            main: "#d61919",
             // main: "#04A777",
             // main: "#DC965A",
         },
@@ -28,7 +28,7 @@ let theme = createTheme({
             darkMuted: "#757575",
             light: "#fffceb",
             lightMuted: "#cacaca",
-            accent: "red",
+            accent: "#d61919",
         },
         text: {
             primary: "#272D2D",
@@ -47,7 +47,7 @@ theme = createTheme(theme, {
     border: `1px solid ${theme.palette.custom.accent}`,
     custom: {
         spacing: {
-            small: "2rem",
+            small: "1rem",
             medium: "3rem",
             large: "4rem",
             xl: "8rem",
@@ -103,14 +103,14 @@ theme = createTheme(theme, {
         subtitle1: {
             fontFamily: theme.font.primary,
             fontWeight: "400",
-            color: theme.palette.custom.darkMuted,
+            color: theme.palette.custom.dark,
             fontSize: "1.25rem",
         },
         subtitle2: {
             fontFamily: theme.font.primary,
             fontWeight: "400",
             fontSize: "1.25rem",
-            color: theme.palette.custom.darkMuted,
+            color: theme.palette.custom.dark,
         },
         body1: {
             fontFamily: theme.font.primary,
@@ -125,7 +125,7 @@ theme = createTheme(theme, {
             // fontWeight: "400",
             fontSize: "1.25rem",
             lineHeight: "1.5rem",
-            color: theme.palette.custom.darkMuted,
+            color: theme.palette.custom.dark,
             // fontFamily: darkTheme.typography.darkTheme.decorative,
         },
         caption: {

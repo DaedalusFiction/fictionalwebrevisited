@@ -10,7 +10,10 @@ const Template = ({ template }) => {
     return (
         <Box
             sx={{
-                padding: theme.custom.spacing.medium,
+                padding: {
+                    xs: theme.custom.spacing.small,
+                    md: theme.custom.spacing.medium,
+                },
                 borderRight: { xs: "none", md: theme.border },
                 borderBottom: theme.border,
                 display: "flex",
@@ -43,7 +46,7 @@ const Template = ({ template }) => {
                 >
                     {template.name}
                 </Typography>
-                <Typography variant="subtitle2" sx={{ textAlign: "center" }}>
+                <Typography variant="subtitle1" sx={{ textAlign: "center" }}>
                     starting at
                 </Typography>
                 <Typography

@@ -21,13 +21,17 @@ export default function Home() {
                     <Box
                         className="gradient border-bottom"
                         sx={{
-                            padding: theme.custom.spacing.medium,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
                             borderRight: { xs: "none", md: theme.border },
                             height: "100%",
                         }}
                     >
                         <Typography
                             variant="h2"
+                            component="p"
                             sx={{ textAlign: { xs: "center", md: "end" } }}
                         >
                             The journey of a thousand miles begins with a single
@@ -39,7 +43,10 @@ export default function Home() {
                     <Box
                         className="border-bottom"
                         sx={{
-                            padding: theme.custom.spacing.large,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.large,
+                            },
                             display: "flex",
                             flexDirection: "column",
                             height: "100%",
@@ -113,7 +120,10 @@ export default function Home() {
                             justifyContent: "space-between",
                             alignItems: { xs: "start", md: "end" },
                             borderRight: { xs: "none", md: theme.border },
-                            padding: theme.custom.spacing.small,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
                             background: theme.palette.primary.main,
                         }}
                     >
@@ -126,6 +136,7 @@ export default function Home() {
                         >
                             <Typography
                                 variant="h3"
+                                component="p"
                                 sx={{
                                     color: theme.palette.custom.light,
                                     textAlign: { xs: "center", md: "end" },
@@ -164,7 +175,11 @@ export default function Home() {
                 <Grid item xs={12} md={6}>
                     <Box
                         sx={{
-                            padding: theme.custom.spacing.small,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
+
                             backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose4.webp)`,
                             // backgroundSize: "cover",
                             backgroundPosition: { xs: "50% 0%", md: "15% 10%" },
@@ -172,7 +187,7 @@ export default function Home() {
                     >
                         <Typography
                             variant="h1"
-                            component="h6"
+                            component="p"
                             sx={{
                                 maxWidth: "40rem",
                                 textAlign: { xs: "center", md: "start" },

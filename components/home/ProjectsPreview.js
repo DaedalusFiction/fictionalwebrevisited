@@ -27,7 +27,10 @@ const Portfolio = () => {
                 >
                     <Box
                         sx={{
-                            padding: theme.custom.spacing.large,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.large,
+                            },
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "space-between",

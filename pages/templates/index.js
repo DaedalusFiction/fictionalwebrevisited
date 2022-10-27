@@ -46,7 +46,10 @@ const index = () => {
                                 xs: "50% 0%",
                                 md: "0% 100%",
                             },
-                            padding: theme.custom.spacing.medium,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
                         }}
                     >
                         <Typography>
@@ -105,7 +108,10 @@ const index = () => {
                 <Grid item xs={12} md={6}>
                     <Box
                         sx={{
-                            padding: theme.custom.spacing.medium,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
                             backgroundColor: theme.palette.primary.main,
                             display: "flex",
                             justifyContent: "end",
@@ -128,7 +134,10 @@ const index = () => {
                     <Box
                         className="gradient"
                         sx={{
-                            padding: theme.custom.spacing.medium,
+                            padding: {
+                                xs: theme.custom.spacing.small,
+                                md: theme.custom.spacing.medium,
+                            },
                             height: "100%",
                         }}
                     >

@@ -67,19 +67,23 @@ const ServicesShowcase = ({ services, isPreview }) => {
                             >
                                 <Box>
                                     <Typography
-                                        variant="h3"
+                                        variant="h4"
                                         sx={{ textAlign: "center" }}
                                     >
                                         {service.title}
                                     </Typography>
                                     <Typography
                                         variant="subtitle2"
-                                        sx={{ textAlign: "center" }}
+                                        sx={{
+                                            textAlign: "center",
+                                            fontStyle: "italic",
+                                        }}
                                     >
                                         starting at
                                     </Typography>
                                     <Typography
                                         variant="h4"
+                                        component="p"
                                         sx={{
                                             textAlign: "center",
                                             color: theme.palette.custom.accent,
@@ -120,7 +124,10 @@ const ServicesShowcase = ({ services, isPreview }) => {
                                                                 }}
                                                             />
                                                             <Box>
-                                                                <Typography variant="h6">
+                                                                <Typography
+                                                                    variant="h6"
+                                                                    component="p"
+                                                                >
                                                                     {
                                                                         feature.name
                                                                     }

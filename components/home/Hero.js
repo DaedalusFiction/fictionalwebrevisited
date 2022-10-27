@@ -34,6 +34,7 @@ const Hero = () => {
                         >
                             <Typography
                                 variant="h1"
+                                component="p"
                                 sx={{
                                     textAlign: "end",
                                     marginBottom: ".25em",
@@ -44,6 +45,7 @@ const Hero = () => {
                             </Typography>
                             <Typography
                                 variant="h4"
+                                component="h1"
                                 sx={{
                                     marginBottom: ".5em",
                                     textAlign: "end",
