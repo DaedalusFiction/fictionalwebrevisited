@@ -67,7 +67,8 @@ const ServicesShowcase = ({ services, isPreview }) => {
                             >
                                 <Box>
                                     <Typography
-                                        variant="h4"
+                                        variant="h2"
+                                        component="h4"
                                         sx={{ textAlign: "center" }}
                                     >
                                         {service.title}
