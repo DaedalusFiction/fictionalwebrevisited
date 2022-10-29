@@ -157,17 +157,8 @@ const index = () => {
                                 marginTop: "2rem",
                             }}
                         >
-                            <Link
-                                href="/contact"
-
-                                // onClick={() => {
-                                //     navigateToTop();
-                                // }}
-                            >
+                            <Link href="/contact">
                                 <Button
-                                    // onClick={() => {
-                                    //     navigateToTop();
-                                    // }}
                                     color="secondary"
                                     variant="outlined"
                                     endIcon={<ArrowRightAlt />}

@@ -13,11 +13,11 @@ const index = () => {
                         sx={{
                             borderRight: { xs: "none", md: theme.border },
                             height: "100%",
-                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .75), rgba(255, 252, 235, 0.75)), url(/images/rose2.webp)`,
+                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .5), rgba(255, 252, 235, 0.5)), url(/images/rose2.webp)`,
                             // backgroundSize: "cover",
                             backgroundPosition: {
                                 xs: "50% 30%",
-                                md: "45% 50%",
+                                md: "45% 60%",
                             },
                         }}
                     ></Box>
@@ -40,7 +40,7 @@ const index = () => {
                             Websites can be expensive. And building one
                             yourself, especially if you want something fast,
                             reliable, and uniquely yours, always seems to take
-                            more time and effor than website builders such as
+                            more time and effort than website builders such as
                             Wordpress, Wix, and Squarespace would have you
                             believe. That&rsquo;s why, when we founded Fictional
                             Web in the Spring of 2022, we had one goal in mind:
@@ -80,7 +80,7 @@ const index = () => {
                     <Box
                         sx={{
                             height: "100%",
-                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .85), rgba(255, 252, 235, 0.85)), url(/images/rose3.webp)`,
+                            backgroundImage: `linear-gradient(to right, rgba(255, 252, 235, .5), rgba(255, 252, 235, 0.5)), url(/images/rose3.webp)`,
                             // backgroundSize: "cover",
                             backgroundPosition: {
                                 xs: "50% 30%",

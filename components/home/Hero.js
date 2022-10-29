@@ -37,7 +37,6 @@ const Hero = () => {
                                 component="p"
                                 sx={{
                                     textAlign: "end",
-                                    marginBottom: ".25em",
                                 }}
                             >
                                 FICTIONAL{" "}
