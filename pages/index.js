@@ -10,6 +10,7 @@ import ServicesShowcase from "../components/services/ServicesShowcase";
 import Meta from "../components/home/Meta";
 import theme from "../styles/themes/theme";
 import { servicesContent } from "../siteInfo";
+import ValueShowcase from "../components/home/ValueShowcase";
 
 export default function Home() {
     return (
@@ -121,6 +122,7 @@ export default function Home() {
                 </Grid>
             </Grid>
             <ProjectsPreview />
+            <ValueShowcase />
             <ServicesShowcase services={servicesContent} isPreview />
             <Grid container className="border-bottom">
                 <Grid item xs={12} md={6}>
