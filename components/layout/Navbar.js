@@ -155,9 +155,6 @@ const Navbar = () => {
                                 <Typography
                                     variant="h3"
                                     noWrap
-                                    onClick={() => {
-                                        navigateToTop();
-                                    }}
                                     sx={{
                                         fontSize: "1.75rem",
                                         fontWeight: 700,
@@ -194,9 +191,6 @@ const Navbar = () => {
                                         <Typography
                                             // className="nav-link"
                                             variant="h3"
-                                            onClick={() => {
-                                                navigateToTop();
-                                            }}
                                             sx={{
                                                 margin: "0",
                                                 transition: "300ms",
