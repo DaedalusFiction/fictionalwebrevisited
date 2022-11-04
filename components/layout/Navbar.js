@@ -146,7 +146,8 @@ const Navbar = () => {
                                 sx={{
                                     display: { xs: "flex", md: "none" },
                                     alignItems: "center",
-                                    justifyContent: "center",
+                                    justifyContent: "end",
+                                    paddingRight: "1rem",
                                     height: "100%",
                                     width: "100%",
                                 }}
@@ -159,7 +160,6 @@ const Navbar = () => {
                                     }}
                                     sx={{
                                         fontSize: "1.75rem",
-                                        textAlign: "end",
                                         fontWeight: 700,
                                         color: theme.palette.custom.light,
                                     }}
