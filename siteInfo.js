@@ -41,7 +41,7 @@ const navbar = {
 const servicesContent = [
     {
         title: "Template",
-        price: "$399",
+        price: "$799",
         content:
             "Choose from one of several templates, all of which are built by us from the ground up in React and MUI. Select a color scheme and provide your own images and text.",
         button: {
@@ -79,7 +79,7 @@ const servicesContent = [
     },
     {
         title: "Hybrid",
-        price: "$799",
+        price: "$1199",
         content:
             "Start from a template, but get more control over the layout and style of your website. Select your own fonts, rearrange sections, and design customized components. ",
         button: {
@@ -124,7 +124,7 @@ const servicesContent = [
     },
     {
         title: "Custom",
-        price: "$1599",
+        price: "$1699",
         content:
             "Get a completely unique website, built from scratch just for you. We'll design a personalized theme and craft a website to suit your precise individual needs.",
         button: {
