@@ -41,7 +41,7 @@ const navbar = {
 const servicesContent = [
     {
         title: "Template",
-        price: "$799",
+        price: "$699",
         content:
             "Choose from one of several templates, all of which are built by us from the ground up in React and MUI. Select a color scheme and provide your own images and text.",
         button: {
@@ -124,7 +124,7 @@ const servicesContent = [
     },
     {
         title: "Custom",
-        price: "$1699",
+        price: "$1899",
         content:
             "Get a completely unique website, built from scratch just for you. We'll design a personalized theme and craft a website to suit your precise individual needs.",
         button: {
@@ -171,7 +171,7 @@ const templatesContent = [
             alt: "artist template website screenshot",
         },
         href: "https://fictionalweb-artist.netlify.app",
-        price: "$499",
+        price: "$899",
         features: [
             {
                 name: "Photo Gallery",
@@ -215,7 +215,7 @@ const templatesContent = [
             alt: "author template website screenshot",
         },
         href: "https://fictionalweb-author.netlify.app",
-        price: "$399",
+        price: "$699",
         features: [
             {
                 name: "Books and Published Works Showcase",
@@ -253,8 +253,8 @@ const templatesContent = [
             url: "/images/musicianScreencap.webp",
             alt: "musician template website screenshot",
         },
-        href: "https://fictionalweb-musician.netlify.app",
-        price: "$499",
+        href: "https://snackbarband.com",
+        price: "$799",
         features: [
             {
                 name: "Photo Gallery",
@@ -297,7 +297,7 @@ const templatesContent = [
             alt: "academic template website screenshot",
         },
         href: "https://fictionalweb-academic.netlify.app",
-        price: "$599",
+        price: "$999",
         features: [
             {
                 name: "Books and Published Works Showcase",
@@ -340,7 +340,7 @@ const templatesContent = [
             alt: "designer template website screenshot",
         },
         href: "https://fictionalweb-designer.netlify.app",
-        price: "$699",
+        price: "$1099",
         features: [
             {
                 name: "Photo Gallery",
@@ -388,7 +388,7 @@ const templatesContent = [
             alt: "blog template website screenshot",
         },
         href: "https://fictionalweb-blog.netlify.app",
-        price: "$799",
+        price: "$1299",
         features: [
             {
                 name: "Markdown-supported Articles",
