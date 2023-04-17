@@ -500,6 +500,21 @@ const secondaryProfiles = [
 
 const projectsContent = [
     {
+        name: "Flavor Exceptional Catering",
+        image: {
+            url: "/images/flavorScreencap.webp",
+            alt: "screenshot of flavor exceptional catering website",
+        },
+        technologies: ["Next.js", "MUI"],
+        type: "Catering Company",
+        dividerImageUrl: "/images/rose5.webp",
+        description:
+            "Website created for Flavor Exceptional Catering, a Charlottesville-based catering company.",
+        href: "https://flavorcville.com",
+        details:
+            "For Flavor, we decided on a design that captures the elegance, personality, and professionalism that the company has become known for in town. We created pages to highlight their work with UVA's sororities and fraternities, and we included sample menus and a customized contact form so that potential clients could reach out to them directly.",
+    },
+    {
         name: "The Rumen",
         image: {
             url: "/images/rumenScreencap.webp",
@@ -507,10 +522,11 @@ const projectsContent = [
         },
         technologies: ["Next.js", "MUI", "Markdown", "Firebase"],
         type: "Literary magazine",
-        dividerImageUrl: "/images/rose5.webp",
+        dividerImageUrl: "/images/rose2.webp",
         description:
             "Website created for The Rumen, literary magazines that publishes short stories, poetry, and articles.",
         href: "https://therumen.com",
+        reversed: true,
         details:
             "For The Rumen we wanted something with a classic feel, similar to The New Yorker or Harper's, so we decided on a layout, font, and color scheme that gave the impression of reading a newspaper hot off the presses (with a Taylor ham on a hard roll and a cup of black coffee).\n\nWe set the website up so that the editors can upload, edit, and delete publications straight from the browser, do so securely through Firebase's OAuth 2.0 authentication system.",
     },
@@ -524,7 +540,6 @@ const projectsContent = [
         type: "Artist Portfolio",
         href: "https://cosimahewes.com",
         dividerImageUrl: "/images/rose4.webp",
-        reversed: true,
         description: "Portfolio website for surrealist artist Cosima Hewes.",
         details:
             "Cosima wanted a place where she could host high-quality images of her work, in a place that was uniquely hers and tailored to her style and needs\n\nThe photo gallery supports any number of galleries and subgalleries, and adding or rearranging them is very easily done. ",
@@ -538,25 +553,11 @@ const projectsContent = [
         technologies: ["Next.js", "MUI", "Firebase"],
         type: "Musician Portfolio",
         description: "Band website.",
+        reversed: true,
         href: "https://fictionalweb-zuzus.netlify.app",
         dividerImageUrl: "/images/rose3.webp",
         details:
             "Zuzu's came to us with an existing site that worked great but could use a rebranding and a few additional features.\n\nThey had a way to list their shows, but it was a little cumbersome, so we set them up with a custom events page that they could access straigh from the browser, which automatically filters events to archives as they play.\n\nWe also set them up with a form to collect contact information and messages, so that they could get details to people who were interested in booking them for events.",
-    },
-    {
-        name: "Josh Stehle",
-        image: {
-            url: "/images/joshScreencap.webp",
-            alt: "screenshot of Josh Stehle website",
-        },
-        technologies: ["Next.js", "MUI"],
-        type: "Author Portfolio",
-        reversed: true,
-        dividerImageUrl: "/images/rose2.webp",
-        description: "Author Website.",
-        href: "https://joshstehle.com",
-        details:
-            "When Josh came to us, he had just gotten his first book deal after running a social media account with over 20M views, and he needed a place for publicists and interested readers to quickly access information about him.\n\nWe decided on a simple three-page website that left room for him to expand with features that would allow events, a photo gallery, or a longer list of his publications once his career takes off.",
     },
 ];
 
