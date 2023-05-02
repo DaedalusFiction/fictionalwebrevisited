@@ -7,6 +7,7 @@ import PageLayout from "../../components/layout/PageLayout";
 import Template from "../../components/templates/Template";
 import { templatesContent } from "../../siteInfo";
 import theme from "../../styles/themes/theme";
+import TextHighlight from "../../components/general/TextHighlight";
 
 const index = () => {
     return (
@@ -18,7 +19,7 @@ const index = () => {
                             display: "flex",
                             justifyContent: "end",
                             backgroundColor: theme.palette.primary.main,
-                            padding: theme.custom.spacing.small,
+                            padding: theme.custom.spacing.medium,
                             borderRight: {
                                 xs: "none",
                                 md: theme.border,
@@ -33,7 +34,8 @@ const index = () => {
                                 color: theme.palette.custom.light,
                             }}
                         >
-                            There is nothing new under the sun
+                            There is nothing new under the{" "}
+                            <TextHighlight>sun</TextHighlight>
                         </Typography>
                     </Box>
                 </Grid>
@@ -54,10 +56,13 @@ const index = () => {
                     >
                         <Typography>
                             But that doesn&rsquo;t mean there isn&rsquo;t room
-                            for you to put your own spin on things. All of our
-                            templates are built exclusively by us in Next.js and
-                            MUI, two of the latest JavaScript and CSS
-                            frameworks. This means that your website will be
+                            for you to{" "}
+                            <span style={{ fontWeight: "900" }}>
+                                put your own spin on things.
+                            </span>{" "}
+                            All of our templates are built exclusively by us in
+                            Next.js and MUI, two of the latest JavaScript and
+                            CSS frameworks. This means that your website will be
                             extremely fast, will look great on any mobile
                             device, and will be optimized for search engines and
                             accessibility.
@@ -65,18 +70,22 @@ const index = () => {
                         <br />
                         <Typography>
                             A templated website holds it&rsquo;s own, but it can
-                            also be a great starting point. Like every website
-                            we build, small changes are as simple as letting us
-                            know what you&rsquo;d like changed, while larger
-                            changes, such as adding pages, reorganizing layout,
-                            or updating the aesthetic, can be accomplished at an
-                            hourly rate or an agreed-upon price.
+                            also be a{" "}
+                            <span style={{ fontWeight: "900" }}>
+                                great starting point.
+                            </span>{" "}
+                            Like every website we build, small changes are as
+                            simple as letting us know what you&rsquo;d like
+                            changed, while larger changes, such as adding pages,
+                            reorganizing layout, or updating the aesthetic, can
+                            be accomplished at an hourly rate or an agreed-upon
+                            price.
                         </Typography>
                         <br />
                         <Typography>
                             If you&rsquo;re on a budget, or if for any reason
                             you&rsquo;d prefer to start small, a template can be
-                            a great choice.
+                            an excellent choice.
                         </Typography>
                     </Box>
                 </Grid>
@@ -126,7 +135,7 @@ const index = () => {
                                 textAlign: { xs: "center", md: "end" },
                             }}
                         >
-                            Close, but no cigar?
+                            Close, but no <TextHighlight>cigar?</TextHighlight>
                         </Typography>
                     </Box>
                 </Grid>

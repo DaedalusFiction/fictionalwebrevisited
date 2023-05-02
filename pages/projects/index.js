@@ -5,6 +5,7 @@ import PageLayout from "../../components/layout/PageLayout";
 import Project from "../../components/projects/Project";
 import { projectsContent } from "../../siteInfo";
 import theme from "../../styles/themes/theme";
+import TextHighlight from "../../components/general/TextHighlight";
 
 const index = () => {
     return (
@@ -40,8 +41,11 @@ const index = () => {
                             sx={{ textAlign: { xs: "start", md: "end" } }}
                         >
                             Have a look at some of our past projects, and when
-                            you&rsquo;re fully convinced, reach out to us and
-                            let us know who you are and how we can help.
+                            you&rsquo;re fully convinced,{" "}
+                            <span style={{ fontWeight: "900" }}>
+                                reach out to us
+                            </span>{" "}
+                            and let us know who you are and how we can help.
                         </Typography>
                     </Box>
                 </Grid>
@@ -65,7 +69,8 @@ const index = () => {
                                 maxWidth: "35rem",
                             }}
                         >
-                            Everything we create is our best work
+                            <TextHighlight>Everything</TextHighlight> we create
+                            is our best work
                         </Typography>
                         <Typography
                             variant="h5"

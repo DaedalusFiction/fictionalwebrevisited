@@ -3,6 +3,7 @@ import SizedImage from "../../components/general/SizedImage";
 import { aboutContent } from "../../siteInfo";
 import PageLayout from "../../components/layout/PageLayout";
 import theme from "../../styles/themes/theme";
+import TextHighlight from "../../components/general/TextHighlight";
 
 const index = () => {
     return (
@@ -32,8 +33,12 @@ const index = () => {
                             borderRight: { xs: "none", md: theme.border },
                         }}
                     >
-                        <Typography variant="h3" component="h2">
-                            {aboutContent.name}
+                        <Typography
+                            variant="h3"
+                            component="h2"
+                            sx={{ textAlign: "center" }}
+                        >
+                            Our <TextHighlight>Roots</TextHighlight>
                         </Typography>
                         <br />
                         <Typography>
@@ -53,7 +58,11 @@ const index = () => {
                             with everyone in the arts, from musicians to
                             craftspeople to designers and authors. And the more
                             we worked with people, the more we realize that just
-                            about everything is artistic in some way.
+                            about{" "}
+                            <span style={{ fontWeight: "900" }}>
+                                everything is artistic
+                            </span>{" "}
+                            in some way.
                         </Typography>
                         <br />
                         <Typography>

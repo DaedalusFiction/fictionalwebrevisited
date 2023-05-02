@@ -7,6 +7,7 @@ import theme from "../../styles/themes/theme";
 import { projectsContent } from "../../siteInfo";
 import ProjectPreview from "../projects/ProjectPreview";
 import { useState } from "react";
+import TextHighlight from "../general/TextHighlight";
 
 const Portfolio = () => {
     const [focusedProject, setFocusedProject] = useState(0);
@@ -42,20 +43,27 @@ const Portfolio = () => {
                     >
                         <Box>
                             <Typography variant="h3">
-                                All writing is rewriting.
+                                All writing is{" "}
+                                <TextHighlight>rewriting.</TextHighlight>
                             </Typography>
                             <br />
                             <Typography>
-                                When we build your website, we take care of the
-                                entire process. We design, develop, deploy, and
-                                maintain everything ourselves without any
-                                outside contracts.
+                                When we build your website,{" "}
+                                <span style={{ fontWeight: "900" }}>
+                                    we take care of the entire process.
+                                </span>{" "}
+                                We design, develop, deploy, and maintain
+                                everything ourselves without any outside
+                                contracts.
                             </Typography>
                             <br />
                             <Typography>
-                                And because we maintain everything we create,
-                                changing something is as easy as letting us know
-                                what you&rsquo;d like changed.
+                                And because{" "}
+                                <span style={{ fontWeight: "900" }}>
+                                    we maintain everything
+                                </span>{" "}
+                                we create, changing something is as easy as
+                                letting us know what you&rsquo;d like changed.
                             </Typography>
                             <br />
                         </Box>

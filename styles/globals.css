@@ -141,3 +141,66 @@ a {
     margin: 0;
     line-height: 1.6em;
 }
+
+.bg-text {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-text::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0.5em;
+    left: 0.2em;
+    transform-origin: left;
+
+    /* lavender rose */
+    /* background-color: rgba(208, 118, 130, 0.65); */
+
+    /* burnt orange */
+    background-color: rgba(186, 92, 18, 0.75);
+
+    background-color: rgba(212, 154, 38, 0.75);
+
+    z-index: -1;
+    animation: expand-to-right 0.85s ease-in-out;
+}
+
+@keyframes expand-to-right {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fade-and-slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-3%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(-3%);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+@keyframes fade-and-slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}

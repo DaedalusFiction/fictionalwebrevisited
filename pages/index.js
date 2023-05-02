@@ -8,6 +8,7 @@ import ProjectsPreview from "../components/home/ProjectsPreview";
 import ServicesShowcase from "../components/services/ServicesShowcase";
 
 import Meta from "../components/home/Meta";
+import TextHighlight from "../components/general/TextHighlight";
 import theme from "../styles/themes/theme";
 import { servicesContent } from "../siteInfo";
 import ValueShowcase from "../components/home/ValueShowcase";
@@ -35,8 +36,8 @@ export default function Home() {
                             component="p"
                             sx={{ textAlign: { xs: "center", md: "end" } }}
                         >
-                            The journey of a thousand miles begins with a single
-                            click.
+                            The <TextHighlight>journey</TextHighlight> of a
+                            thousand miles begins with a single click.
                         </Typography>
                     </Box>
                 </Grid>
@@ -58,30 +59,60 @@ export default function Home() {
                             <Typography>
                                 We build websites that tell stories. But
                                 that&rsquo;s perhaps a bit misleading. In the
-                                real world, <em>everything</em> tells a story.
+                                real world,{" "}
+                                <span style={{ fontWeight: "900" }}>
+                                    everything tells a story.
+                                </span>
                             </Typography>
                             <br />
                             <Typography>
                                 If you&rsquo;re a chef, your menu tells the
                                 story of your heritage and your taste. If
                                 you&rsquo;re a photographer, your portfolio
-                                tells the story of how you see the world and how
-                                that vision has changed and changes over time.
-                                If you&rsquo;re a novelist... Well, your stories
-                                tell stories.
+                                tells the story of{" "}
+                                <span style={{ fontWeight: "900" }}>
+                                    how you see the world
+                                </span>{" "}
+                                and how that vision has changed and changes over
+                                time. If you&rsquo;re a novelist... Well, your
+                                stories tell stories.
                             </Typography>
                             <br />
                             <Typography>
                                 Your website can help that story reach a wider
-                                audience. But more than that, in telling your
+                                audience. But more than that, in{" "}
+                                <span style={{ fontWeight: "900" }}>
+                                    telling your
+                                </span>{" "}
                                 story it becomes part of the story itself.
                                 Everything about your website colors it, from
                                 the fonts and the images to the animated
-                                elements and the use of negative space.
+                                elements and the use of{" "}
+                                <Box
+                                    sx={{
+                                        display: "inline-block",
+                                        transform: "translateY(2rem)",
+                                    }}
+                                >
+                                    negative
+                                </Box>{" "}
+                                <Box
+                                    sx={{
+                                        display: "inline-block",
+                                        transform: "translateY(4rem)",
+                                    }}
+                                >
+                                    space.
+                                </Box>
                             </Typography>
                             <br />
+                            <br />
+                            <br />
                             <Typography>
-                                Your website tells the story of who you are.
+                                <span style={{ fontWeight: "900" }}>
+                                    Your website
+                                </span>{" "}
+                                tells the story of who you are.
                             </Typography>
                             <br />
                         </Box>
@@ -95,7 +126,10 @@ export default function Home() {
                             }}
                         >
                             <Typography>
-                                So make sure you tell it well.
+                                So make sure you{" "}
+                                <span style={{ fontWeight: "900" }}>
+                                    tell it well.
+                                </span>
                             </Typography>
                             <Box
                                 sx={{
@@ -156,7 +190,10 @@ export default function Home() {
                                     textAlign: { xs: "center", md: "end" },
                                 }}
                             >
-                                Copyediting comes standard.
+                                Copyediting comes{" "}
+                                <span style={{ fontWeight: "900" }}>
+                                    standard.
+                                </span>
                             </Typography>
                             <br />
                             <Typography
@@ -169,7 +206,10 @@ export default function Home() {
                                 Our background in newspaper and fiction editing
                                 has given us an ear for language. If you know
                                 what you want to tell people but aren&rsquo;t
-                                sure quite how to word it, we can help.
+                                sure quite how to word it,{" "}
+                                <span style={{ fontWeight: "900" }}>
+                                    we can help.
+                                </span>
                             </Typography>
                         </Box>
                         <br />
@@ -217,7 +257,8 @@ export default function Home() {
                                 textAlign: { xs: "center", md: "start" },
                             }}
                         >
-                            You won&rsquo;t know what your story is about until
+                            You won&rsquo;t know what your{" "}
+                            <TextHighlight>story</TextHighlight> is about until
                             it&rsquo;s finished.
                         </Typography>
                     </Box>

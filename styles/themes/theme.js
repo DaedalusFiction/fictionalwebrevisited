@@ -114,7 +114,7 @@ theme = createTheme(theme, {
         },
         body1: {
             fontFamily: theme.font.primary,
-            fontWeight: "475",
+            fontWeight: "400",
             fontSize: "1.35rem",
             lineHeight: "1.75rem",
             // color: theme.palette.custom.darkMuted,

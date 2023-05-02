@@ -4,6 +4,7 @@ import { Box } from "@mui/system";
 import Link from "next/link";
 import React from "react";
 import theme from "../../styles/themes/theme";
+import TextHighlight from "../general/TextHighlight";
 
 const ValueShowcase = () => {
     return (
@@ -18,7 +19,7 @@ const ValueShowcase = () => {
                         padding: theme.custom.spacing.medium,
                     }}
                 >
-                    The value we provide
+                    The <TextHighlight>value</TextHighlight> we provide
                 </Typography>
             </Grid>
             <Grid item xs={12} md={3}>
@@ -47,32 +48,44 @@ const ValueShowcase = () => {
                 >
                     <Typography>
                         When we go about creating a website, we have two goals
-                        in mind: One, make it easy for people to find it, and
-                        two, make sure that people enjoy their time there,
-                        whether they&rsquo;re visiting it for the first time or
-                        the fiftieth.
+                        in mind: One,{" "}
+                        <span style={{ fontWeight: "900" }}>make it easy</span>{" "}
+                        for people to find it, and two, make sure that people
+                        enjoy their time there, whether they&rsquo;re visiting
+                        it for the first time or the fiftieth.
                     </Typography>
                     <br />
                     <Typography>
                         That&rsquo;s why we use Next.js and MUI for every
-                        project we work on. Next.js provides server-side
-                        rendered (SSR) pages that are easily discovered and
-                        indexed by Google&rsquo;s web crawlers. They load in the
-                        blink of an eye, without all of the bloat that comes
+                        project. Next.js provides server-side rendered (SSR)
+                        pages that are{" "}
+                        <span style={{ fontWeight: "900" }}>
+                            easily discovered
+                        </span>{" "}
+                        and indexed by Google&rsquo;s web crawlers. They load in
+                        the blink of an eye, without all of the bloat that comes
                         with a website made in a content management system like
                         Wordpress or Wix.
                     </Typography>
                     <br />
                     <Typography>
-                        It&rsquo;s also why we take advantage of MUI&rsquo;s
-                        clean, responsive, and intuitive design frameworks. This
-                        means that our websites have a sharp, familiar,
-                        intuitive feel, while providing all of the tools we need
-                        to make your website stand out from the crowd.
+                        It&rsquo;s also why we take advantage of MUI&rsquo;s{" "}
+                        <span style={{ fontWeight: "900" }}>
+                            clean, responsive, and intuitive
+                        </span>{" "}
+                        design frameworks. This means that our websites have a
+                        sharp, familiar, intuitive feel, while providing all of
+                        the tools we need to make your website{" "}
+                        <span style={{ fontWeight: "900" }}>
+                            stand out from the crowd.
+                        </span>
                     </Typography>
                     <br />
                     <Typography>
-                        Want to learn more? Schedule a free consultation call
+                        Want to learn more?{" "}
+                        <span style={{ fontWeight: "900" }}>
+                            Schedule a free consultation call
+                        </span>{" "}
                         and let us show you how we can help your online presence
                         reach the world.
                     </Typography>
