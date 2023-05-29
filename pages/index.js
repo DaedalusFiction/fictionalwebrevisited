@@ -60,7 +60,7 @@ export default function Home() {
                                 We build websites that tell stories. But
                                 that&rsquo;s perhaps a bit misleading. In the
                                 real world,{" "}
-                                <span style={{ fontWeight: "900" }}>
+                                <span style={{ fontWeight: "800" }}>
                                     everything tells a story.
                                 </span>
                             </Typography>
@@ -70,7 +70,7 @@ export default function Home() {
                                 story of your heritage and your taste. If
                                 you&rsquo;re a photographer, your portfolio
                                 tells the story of{" "}
-                                <span style={{ fontWeight: "900" }}>
+                                <span style={{ fontWeight: "800" }}>
                                     how you see the world
                                 </span>{" "}
                                 and how that vision has changed and changes over
@@ -80,14 +80,14 @@ export default function Home() {
                             <br />
                             <Typography>
                                 Your website can help that story reach a wider
-                                audience. But more than that, in{" "}
-                                <span style={{ fontWeight: "900" }}>
-                                    telling your
+                                audience. But more than that, in telling{" "}
+                                <span style={{ fontWeight: "800" }}>
+                                    your story
                                 </span>{" "}
-                                story it becomes part of the story itself.
-                                Everything about your website colors it, from
-                                the fonts and the images to the animated
-                                elements and the use of{" "}
+                                it becomes part of the story itself. Everything
+                                about your website colors it, from the fonts and
+                                the images to the animated elements and the use
+                                of{" "}
                                 <Box
                                     sx={{
                                         display: "inline-block",
@@ -109,10 +109,7 @@ export default function Home() {
                             <br />
                             <br />
                             <Typography>
-                                <span style={{ fontWeight: "900" }}>
-                                    Your website
-                                </span>{" "}
-                                tells the story of who you are.
+                                Your website tells the story of who you are.
                             </Typography>
                             <br />
                         </Box>
@@ -127,7 +124,7 @@ export default function Home() {
                         >
                             <Typography>
                                 So make sure you{" "}
-                                <span style={{ fontWeight: "900" }}>
+                                <span style={{ fontWeight: "800" }}>
                                     tell it well.
                                 </span>
                             </Typography>
@@ -191,7 +188,7 @@ export default function Home() {
                                 }}
                             >
                                 Copyediting comes{" "}
-                                <span style={{ fontWeight: "900" }}>
+                                <span style={{ fontWeight: "800" }}>
                                     standard.
                                 </span>
                             </Typography>
@@ -207,7 +204,7 @@ export default function Home() {
                                 has given us an ear for language. If you know
                                 what you want to tell people but aren&rsquo;t
                                 sure quite how to word it,{" "}
-                                <span style={{ fontWeight: "900" }}>
+                                <span style={{ fontWeight: "800" }}>
                                     we can help.
                                 </span>
                             </Typography>
