@@ -557,7 +557,7 @@ const projectsContent = [
         href: "https://fictionalweb-zuzus.netlify.app",
         dividerImageUrl: "/images/rose3.webp",
         details:
-            "Zuzu's came to us with an existing site that worked great but could use a rebranding and a few additional features.\n\nThey had a way to list their shows, but it was a little cumbersome, so we set them up with a custom events page that they could access straigh from the browser, which automatically filters events to archives as they play.\n\nWe also set them up with a form to collect contact information and messages, so that they could get details to people who were interested in booking them for events.",
+            "Zuzu's came to us with an existing site that worked great but could use a rebranding and a few additional features.\n\nThey had a way to list their shows, but it was a little cumbersome, so we set them up with a custom events page that they could access straight from the browser, which automatically filters events to archives as they play.\n\nWe also set them up with a form to collect contact information and messages, so that they could get the contact information of people interested in booking them for events.",
     },
 ];
 
