@@ -138,7 +138,7 @@ export default function Home() {
                                     width: "100%",
                                 }}
                             >
-                                <Link href="/contact">
+                                <Link href="/services">
                                     <Button
                                         endIcon={<ArrowRightAlt />}
                                         variant="outlined"
